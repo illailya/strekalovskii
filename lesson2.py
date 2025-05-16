@@ -19,3 +19,13 @@ result4 = result3.startswith('HELLO')
 print(f"Проверяет, начинается ли строка с 'HELLO' (после преобразований): {result4}")
 result5 = result3.split(',')
 print(f"Разделяет строку по запятой (получится список из 2 элементов): {result5} ")
+
+
+name = "Алексей"
+age = 25
+hobby = "программированию"
+
+age_str = str(age)
+concatenation = "Меня зовут " + name + ", мне " + age_str + " лет, я учусь " + hobby
+print(concatenation)
+print(f"Меня зовут {name}, мне {age} лет, я учусь {hobby}")
