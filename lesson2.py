@@ -1,4 +1,6 @@
 #Задание 1
+from os import replace
+
 text = "Hello, Python!"
 
 print(f"Первые 5 символов: text[:5]")
@@ -29,3 +31,20 @@ age_str = str(age)
 concatenation = "Меня зовут " + name + ", мне " + age_str + " лет, я учусь " + hobby
 print(concatenation)
 print(f"Меня зовут {name}, мне {age} лет, я учусь {hobby}")
+
+
+#Задача 3
+
+text = "Программирование на Python - это увлекательно!"
+
+result5 = text.lower()
+print(f"Привести строку к нижнему регистру: {result5}")
+result6 = result5.replace('увлекательно', 'полезно')
+print(f"Заменить слово 'увлекательно' на 'полезно': {result6}")
+result7 = 'python' in result6
+print(f"Проверить, содержит ли строка подстроку 'python' (после преобразований): {result7}")
+result8 =result6.split()
+print(f"Разделить строку по пробелам (чтобы получить список слов): {result8}")
+#Вывести итоговую строку и результаты проверки (пункт 3)
+print(result8)
+print(result7)
