@@ -59,3 +59,18 @@ print(f"Извлечь все символы на чётных индексах 
 result2 =secret[1::2]
 print(f"Извлечь все символы на нечётных индексах (1, 3, 5...): {result2}")
 print(f"Четные: {result}. Нечетные: {result2}")
+
+#Задача 5
+
+message = "!!Данные_2023: Важный_Текст; Надо_Обработать!!"
+
+result = message.strip("!")
+print(f"Убрать восклицательные знаки по краям: {result}")
+result2 = result.replace("_" , " ")
+print(f"Заменить все подчёркивания на пробелы: {result2}")
+result3 = result2.split(";")
+print(f"Разделить строку по точке с запятой (получится 2 части): {result3}")
+result4 = result3[1].lower()
+print(f"Вторую часть перевести в нижний регистр: {result4}")
+result5 = "Результат:" + " " + result3[0] + result4
+print(f"Соединить результат: {result5}")
