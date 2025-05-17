@@ -74,3 +74,24 @@ result4 = result3[1].lower()
 print(f"Вторую часть перевести в нижний регистр: {result4}")
 result5 = "Результат:" + " " + result3[0] + result4
 print(f"Соединить результат: {result5}")
+
+#Задача 6
+
+text = "  Зимний вечер, снег идёт...  "
+
+result = text.strip().replace(" ", "_").upper()
+
+print(f"Итоговый результат: {result}")
+
+
+#Задача 7
+
+
+#Создать строку в формате:
+#"Погода в Москве: -5°C, снег."
+
+city = "Москва"
+city = "Москве"
+temperature = -5
+weather = "снег"
+print(f"Погода в {city}: {temperature}°C, {weather}.")
