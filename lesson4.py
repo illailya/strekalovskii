@@ -16,3 +16,21 @@ if y % 2 ==0:
     print("Четное")
 else:
     print("Нечетное")
+
+
+
+#Задача 4
+
+
+score = 102
+
+if score < 50:
+    print("Неудовлетворительно")
+elif 50 <= score <= 69:
+    print("Удовлетворительно")
+elif 70 <= score <= 89:
+    print("Хорошо")
+elif 90 <= score <= 100:
+    print("Отлично")
+else:
+  print("Некорректный ввод")
