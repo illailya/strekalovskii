@@ -152,3 +152,23 @@ time = 17
 result = "Ночь" if time < 6 else ("Утро" if time < 12 else "День" if time < 18 else "Вечер")
 print(result)
 
+#задача 13
+
+x = 11
+
+if x %2==0:
+    print("Четное")
+else:
+    print("Нечетное")
+
+
+#задача 14
+
+temperature = 25
+
+if temperature > 30:
+    print("Жарко")
+elif 20 <= temperature <= 30:
+    print("Тепло")
+elif temperature < 20:
+    print("Прохладно")
