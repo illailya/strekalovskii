@@ -179,5 +179,5 @@ elif temperature < 20:
 
 password = "qwert"
 
-result = "Надёжный" if len(password) > 8 else "Слишком короткий"
+result = "Надёжный" if len(password) >= 8 else "Слишком короткий"
 print(result)
