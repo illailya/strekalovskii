@@ -172,3 +172,12 @@ elif 20 <= temperature <= 30:
     print("Тепло")
 elif temperature < 20:
     print("Прохладно")
+
+
+
+#Задача 15
+
+password = "qwert"
+
+result = "Надёжный" if len(password) > 8 else "Слишком короткий"
+print(result)
