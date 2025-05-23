@@ -95,3 +95,16 @@ city = "Москве"
 temperature = -5
 weather = "снег"
 print(f"Погода в {city}: {temperature}°C, {weather}.")
+
+#задача 8
+
+fruits = ["Яблоко", "Банан", "Киви"]
+print(fruits)
+
+#задача9
+
+numbers = [10, 20, 30]
+
+numbers.append(40)
+numbers[1] = 25
+print(numbers)
