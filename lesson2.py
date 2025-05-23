@@ -108,3 +108,21 @@ numbers = [10, 20, 30]
 numbers.append(40)
 numbers[1] = 25
 print(numbers)
+
+#Задача 10
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f']
+
+slice_letters = letters[2:5]
+print(slice_letters)
+
+#задача 11
+
+colors = ['red', 'green', 'blue', 'yellow', 'black']
+
+colors.remove("blue")
+print(colors)
+del colors[2]
+print(colors)
+colors.clear()
+print(colors)
