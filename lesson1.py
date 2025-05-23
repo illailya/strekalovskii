@@ -121,4 +121,47 @@ num_float = float(num_int)
 print(num_int)
 print(num_str)
 print(num_float)
-print({num_str}+{num_int})
+
+
+#Задача 6
+
+name = "Анна"
+
+print(type(name))
+
+#Задача 7
+
+num_str = "10"
+num_int = 5
+num2 = int(num_str)
+print(num_int + num2)
+
+#Задача8
+
+x = 7
+y = 12
+
+print(x > y, x < y, x == y)
+
+
+#Задача9
+
+weather = "солнечно"
+print(weather)
+weather = "дождь"
+print(weather)
+
+#Задача10
+
+one_st_place = "Иван"
+my_variable = 42
+class_aut = "Автомобиль"
+print(one_st_place, my_variable, class_aut)
+
+#Задача11
+
+a = 3.14
+b = False
+c = "25"
+
+print(f"{type(a)}\n{type(b)}\n{type(c)}")
