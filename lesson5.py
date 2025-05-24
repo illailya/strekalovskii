@@ -40,3 +40,18 @@ if 16 in laptop.values():
     print("ram 16 есть в словаре")
 else:
     print("ram 16 отсутствует в словаре")
+
+
+#Задача 4
+
+country = {
+    "name": "Япония",
+    "capital": "Токио",
+    "population": 126_500_000,
+    "island": True
+}
+
+keys_list = country.keys()
+values_list = country.values()
+has_tokyo = "Токио" in values_list
+print(f"Ключи: {keys_list}\nЗначения: {values_list} Значение 'Токио' присутствует: {has_tokyo}")
