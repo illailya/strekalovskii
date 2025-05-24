@@ -1,3 +1,4 @@
+#Строки
 #Задание 1
 from os import replace
 
