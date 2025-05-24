@@ -152,3 +152,19 @@ print(electronics)
 
 cars = ['Toyota', 'BMW', 'Mercedes', 'Audi', 'Tesla']
 print(f"{cars[0]}\n{cars[-1]}\n{cars[2]}")
+
+#Задача 16
+
+inventory = ['меч', 'щит', 'зелье', 'карта']
+inventory.clear()
+if not inventory:
+    print("Инвентарь пуст")
+else:
+    print("В инвентаре есть предметы")
+
+#Задача 17
+
+movies = ['брат', 'брат 2', 'брат 3']
+movies.append("форсаж")
+movies[1] = 'Титаник'
+print(f"{movies}\nДлина списка: {len(movies)}")
