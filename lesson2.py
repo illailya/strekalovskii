@@ -126,3 +126,29 @@ del colors[2]
 print(colors)
 colors.clear()
 print(colors)
+
+#Задача 12
+
+list1 = [1, 2, 3]
+list2 = ['a', 'b', 'c']
+list1.extend(list2)
+print(list1)
+
+#Задача 13
+
+animals = ['кошка', 'собака', 'хомяк']
+animals.insert(2,'попугай')
+animals.insert(0,'рыбка')
+print(animals)
+
+#Задача 14
+
+electronics = ['телефон', 'ноутбук', 'наушники', 'мышка']
+electronics[2] = 'клавиатура'
+electronics[-1] = 'монитор'
+print(electronics)
+
+#Задача 15
+
+cars = ['Toyota', 'BMW', 'Mercedes', 'Audi', 'Tesla']
+print(f"{cars[0]}\n{cars[-1]}\n{cars[2]}")
