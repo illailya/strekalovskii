@@ -2,6 +2,8 @@
 #Задание 1
 from os import replace
 
+from lesson3 import fruits
+
 text = "Hello, Python!"
 
 print(f"Первые 5 символов: text[:5]")
@@ -99,3 +101,39 @@ print(f"Погода в {city}: {temperature}°C, {weather}.")
 
 #задача 8
 
+fruit = "Апельсин"
+print(fruit)
+
+#Задача9
+
+item = "автоматизация"
+print(item[2])
+
+#Задача10
+
+item = "программирование"
+print(item[4:10])
+
+#Задача11
+
+item = "Hello, World!"
+result = len(item)
+print(result)
+
+#Задача12
+
+word1 = "Привет"
+word2 = "Мир"
+result =  word1 + " " +  word2
+print(result)
+
+#Задача13
+
+name = "Алексей"
+age = 25
+print(f"Меня зовут {name}, мне {age} лет")
+
+#Задача14
+
+text = "  python is awesome!  "
+print(text.strip())
