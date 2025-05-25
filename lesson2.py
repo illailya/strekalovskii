@@ -137,3 +137,24 @@ print(f"Меня зовут {name}, мне {age} лет")
 
 text = "  python is awesome!  "
 print(text.strip())
+
+#Задача15
+
+s = "Съешь ещё этих мягких французских булок"
+length = len(s)
+result = s.split()[-1]
+result2 = s.upper()
+print(f"Длина: {length}\nПоследнее слово: {result}\nВерхний регистр: {result2}")
+
+#Задача16
+
+word = "ОКОЛО"
+result = word[::-1]
+print(word==result)
+
+#Задача17
+
+text = "Я изучаю Python"
+result = text.replace("изучаю", "люблю")
+result2 = result.lower()
+print(result2)
