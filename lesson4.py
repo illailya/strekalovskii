@@ -182,3 +182,46 @@ password = "qwert"
 
 result = "Надёжный" if len(password) >= 8 else "Слишком короткий"
 print(result)
+
+#Задача 16
+
+x = 2
+if x > 0 and x % 2 == 0:
+    print(True)
+else:
+    print(False)
+
+
+#Задача 17
+
+age = 19
+if age >= 18:
+    status = "Взрослый"
+else:
+    status = "Ребёнок"
+print(status)
+
+ter = "Взрослый" if age >= 18 else  "Ребёнок"
+print(ter)
+
+#Задача 18
+
+n = 5
+if n < 0:
+    print("Отрицательное")
+elif n == 0:
+    print("Ноль")
+elif n > 0 and n < 10:
+    print("Положительное однозначное")
+else:
+    print("Положительное многозначное")
+
+
+#Задача 19
+
+temperature = 15
+
+if temperature > 20:
+    print("Тепло")
+else:
+    print("Холодно")
