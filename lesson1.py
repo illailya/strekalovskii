@@ -2,6 +2,7 @@
 # Задача 1 (Арифметические операции)
 # Задание:
 # Вычисли сумму, разность, произведение и частное этих чисел и выведи результат одной строкой в формате:
+from lesson2 import result
 
 a = 10
 b = 2
@@ -166,3 +167,36 @@ b = False
 c = "25"
 
 print(f"{type(a)}\n{type(b)}\n{type(c)}")
+
+#Задача12
+
+num_1 = 15
+num_2 = 7
+result = num_1 + num_2
+print(f"Сумма чисел: {result}")
+
+#Задача13
+
+value = 3.14
+result = type(value)
+print(result)
+
+#Задача14
+
+num_1 = 10
+num_2 = 20
+if num_1 < num_2:
+    print(True)
+else:
+    print(False)
+
+#Задача15
+
+val_str = "123"
+val_int = int(val_str)
+print(val_int*2)
+
+#Задача16
+
+user_age = 25
+print(user_age)
