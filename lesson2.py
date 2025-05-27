@@ -158,3 +158,41 @@ text = "Я изучаю Python"
 result = text.replace("изучаю", "люблю")
 result2 = result.lower()
 print(result2)
+
+#Задача18
+
+text = "Привет, мир!"
+print(text)
+
+#Задача19
+
+word = "Кодинг"
+print(word[2])
+
+#Задача20
+
+text = "Автоматизация"
+print(text[2:7])
+
+#Задача21
+
+message = "Python"
+print(len(message))
+
+#Задача22
+
+word1 = "Hello"
+word2 = "World"
+result = word1 + " " + word2
+print(result)
+
+#Задача23
+
+name = "Анна"
+age = 25
+print(f"{name}, {age} лет")
+
+#Задача24
+
+text = "   робот-пылесос   "
+print(text.strip())
