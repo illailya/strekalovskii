@@ -200,3 +200,23 @@ print(val_int*2)
 
 user_age = 25
 print(user_age)
+
+#Задача17
+
+count = 5
+count = 10
+result = count + 3
+print(result)
+
+#Задача18
+
+name = "Anna"
+score = 95
+print(f"{name}, {score}")
+
+#Задача19
+
+num_1 = 17
+num_2 = 3
+result = num_1 % num_2
+print(result)
