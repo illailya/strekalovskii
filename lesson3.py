@@ -126,3 +126,28 @@ print(letters[1:5])
 fruits = ['яблоко', 'груша', 'банан', 'киви']
 fruits[1] = "апельсин"
 print(fruits)
+
+#Задача 18
+
+colors = ['красный', 'зеленый', 'синий', 'желтый']
+colors.remove("синий")
+print(colors)
+
+#Задача 19
+
+words = ["привет", "Python"]
+words.insert(1, "мир")
+print(words)
+
+#Задача 20
+
+list1 = [1, 2]
+list2 = [3, 4]
+result1 = list1 + list2
+print(result1)
+
+#Задача 21
+
+data = [10, 20, 30, 40]
+data.clear()
+print(data)
