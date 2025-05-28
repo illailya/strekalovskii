@@ -102,3 +102,27 @@ del languages[3]
 print(f"Удалить элемент с индексом 3: {languages}")
 languages.clear()
 print(f"Очистить список полностью: {languages}")
+
+
+#Задача 14
+
+animals = ['кошка', 'собака', 'попугай', 'хомяк']
+print(animals[2])
+
+
+#Задача 15
+
+numbers = [1, 2, 3]
+numbers.append(4)
+print(numbers)
+
+#Задача 16
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f']
+print(letters[1:5])
+
+#Задача 17
+
+fruits = ['яблоко', 'груша', 'банан', 'киви']
+fruits[1] = "апельсин"
+print(fruits)
