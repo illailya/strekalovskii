@@ -23,5 +23,4 @@ while i <= 5:
 for num in range(3,9):
     print(num)
 
-#Задание5
 
