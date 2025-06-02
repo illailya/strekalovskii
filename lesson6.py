@@ -1,5 +1,6 @@
 #Циклы
 #задание1
+from lesson1 import count
 
 text = "Python"
 for text1 in text:
@@ -45,3 +46,54 @@ while num > 0:
 temps = [25.3, 18.7, 30.5, 22.0, 17.1]
 for temp in temps:
     print(f"Температура: {temp}")
+
+#задача
+
+fruits = ["яблоко", "банан", "апельсин"]
+for fruit in fruits:
+    print(fruit)
+
+#Задача
+
+count = 1
+while count < 6:
+    print(count)
+    count +=1
+
+#Задача
+
+print(list(range(10,20)))
+
+#Задача
+
+for item in range(3, 9):
+  print(item)
+
+#Задача
+
+x = 0
+while True:
+    x += 1
+    print(x)
+    if x == 5:
+     break
+
+#Задача
+
+x = 10
+while True:
+    x -= 1
+    print(x)
+    if x < 4:
+        break
+
+
+#задача
+
+count = 0
+while True:
+    x = input("Введите число (0 для выхода): ")
+    if x == "0":
+        break
+    count += 1
+print(f"Вы ввели {count} чисел")
