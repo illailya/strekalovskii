@@ -97,3 +97,44 @@ if "is_verified" in user:
     print(user["is_verified"])
 else:
     print("Ключ отсутствует")
+
+
+#
+
+fruit_colors = {"apple": "red", "banana": "yellow", "grape": "purple"}
+print(fruit_colors)
+
+ages = {"Alice": 25, "Bob": 30, "Charlie": 22}
+bob_age = ages["Bob"]
+print(f"Возраст: {bob_age} лет")
+
+#
+
+country_capitals = {"France": "Paris", "Japan": "Tokyo"}
+country_capitals["Germany"] = "Berlin"
+country_capitals["Japan"] = "Kyoto"
+print(country_capitals)
+
+#
+
+inventory = {"apple": 10, "banana": 5, "orange": 8}
+del inventory["banana"]
+print(inventory)
+
+
+book = {"title": "1984", "author": "Orwell", "year": 1949}
+print(book.values())
+print(book.keys())
+print(book.items())
+
+#
+
+user = {"name": "Alice", "age": 25, "email": "alice@example.com"}
+if "age" in user.keys():
+    print(True)
+else:
+    print(False)
+if "bob@example.com" in user.values():
+    print(True)
+else:
+    print(False)

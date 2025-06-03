@@ -1,5 +1,7 @@
 #Циклы
 #задание1
+from mmap import error
+
 from lesson1 import count
 
 text = "Python"
@@ -90,10 +92,36 @@ while True:
 
 #задача
 
-count = 0
-while True:
-    x = input("Введите число (0 для выхода): ")
-    if x == "0":
-        break
-    count += 1
-print(f"Вы ввели {count} чисел")
+# count = 0
+# while True:
+#     x = input("Введите число (0 для выхода): ")
+#     if x == "0":
+#         break
+#     count += 1
+# print(f"Вы ввели {count} чисел")
+
+#Задача
+
+x = 1
+while x < 6:
+    print(x)
+    x += 1
+
+#
+
+x = "Привет"
+for y in x:
+    print(y)
+
+#
+
+
+for item in range(2,7,2):
+    print(item)
+
+#
+
+x = 2
+while x < 7:
+    print(x)
+    x += 2

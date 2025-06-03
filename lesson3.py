@@ -1,4 +1,5 @@
 #Списки
+from os import remove
 
 #Задача 1
 
@@ -151,3 +152,72 @@ print(result1)
 data = [10, 20, 30, 40]
 data.clear()
 print(data)
+
+#
+
+fruits = ["банан", "яблоко", "киви"]
+
+#
+
+cars = ["BMW", "Audi", "Tesla", "Toyota"]
+print(cars[1])
+
+#
+
+animals = ["cat", "dog"]
+animals.append("bird")
+print(animals)
+
+#
+
+colors = ["red", "blue", "green"]
+colors.insert(1, "yellow")
+print(colors)
+
+#
+
+laptops = ["Lenovo", "Acer", "Dell", "HP"]
+laptops[2] = "Asus"
+print(laptops)
+
+#
+
+numbers = [10, 20, 30, 40, 50]
+numbers.remove(30)
+print(numbers)
+
+#
+
+temperatures = [25, 30, 18, 22]
+temperatures.clear()
+print(temperatures)
+
+#
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f']
+result = letters[1:4]
+print(result)
+
+#
+
+tools = ["молоток", "отвёртка", "пила", "гаечный ключ"]
+removed_tool = tools.pop(2)
+print(tools)
+print(removed_tool)
+
+#
+
+numbers = [5, 3, 9, 1]
+numbers.reverse()
+print(numbers)
+
+#
+
+words = ["яблоко", "банан", "яблоко", "вишня", "яблоко"]
+print(words.count("яблоко"))
+
+temperatures = [-5, 12, 3, 0, -10]
+minimum =min(temperatures)
+maximum = max(temperatures)
+print(minimum)
+print(maximum)

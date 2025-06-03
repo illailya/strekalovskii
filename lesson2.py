@@ -196,3 +196,101 @@ print(f"{name}, {age} лет")
 
 text = "   робот-пылесос   "
 print(text.strip())
+
+#
+
+name = "Илья"
+age = 34
+print(f"Меня зовут {name}, мне {age} лет.")
+
+
+#для себя
+name = "Илья"
+age = 12
+
+last_digit = age % 10
+two_last_digits = age % 100  # Для исключений (11-14)
+
+if 11 <= two_last_digits <= 14:
+    word = "лет"
+elif last_digit == 1:
+    word = "год"
+elif 2 <= last_digit <= 4:
+    word = "года"
+else:
+    word = "лет"
+
+print(f"Меня зовут {name}, мне {age} {word}.")
+
+
+#
+
+text = "Программирование"
+print(text[0:5])
+print(text[-4:])
+print(text[5:11])
+
+#
+
+s = "   Hello, World!   "
+d = s.strip()
+g = d.replace("World", "Python")
+f = g.upper()
+print(f)
+
+#
+
+word1 = "Автоматизация"
+word2 = "тестирования"
+word3 = "Python"
+result = word1 + " " + word2 + " на "+ word3
+print(result)
+
+#
+
+text = "Программист"
+print(text[0], text[-1])
+print(len(text))
+middle = len(text) // 2
+print(text[middle])
+
+#
+
+s = "Я изучаю Python и хочу стать разработчиком"
+start_result = s.startswith("Я изучаю")
+print(start_result)
+end_result = s.endswith("разработчиком")
+print(end_result)
+reeg = s.upper()
+print(reeg)
+
+#
+
+path = r"C:\Users\Documents\project\file.txt"
+name_file = path[-8:]
+print(name_file)
+path_file = path[:-8]
+print(path_file)
+result = path.replace("\\", "/")
+print(result)
+end_result = result.endswith(".txt")
+print(end_result)
+
+#
+
+s = "   Hello, World!   "
+s_reg = s.strip()
+print(s_reg)
+s_upp = s_reg.upper()
+print(s_upp)
+result = s_upp.replace("WORLD", "PYTHON")
+print(result)
+print("Hello".lower() in result.lower())
+
+#
+
+text = "  НаПИСАНО Плохо: 2 ошибки, 1 опечатКА.   "
+text = text.strip()
+text = text.capitalize()
+text = text.replace("2", "две").replace("1", "одна")
+print(text)

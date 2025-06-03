@@ -220,3 +220,53 @@ num_1 = 17
 num_2 = 3
 result = num_1 % num_2
 print(result)
+
+#
+
+length = 5
+width = 3
+result = length * width
+print(result)
+
+#
+
+number_str = "10"
+number_int = int(number_str)
+print(type(number_int))
+
+#
+
+a = 7
+b = 12
+if a < b:
+    print(True)
+else:
+    print(False)
+if a == b:
+    print(True)
+else:
+    print(False)
+
+#
+
+student = 25
+print(f"Количество студентов: {student}")
+
+
+#
+
+price = 100
+price = 120
+print(f"Новая цена: {price}")
+if price > 110:
+  print("Дорого!")
+
+
+#
+
+item = "Книга"
+weight = 0.5
+quantity = 3
+print(f"Тип item: {type(item)}")
+print(f"Тип weight: {type(weight)}")
+print(f"Тип quantity: {type(quantity)}")
