@@ -221,3 +221,84 @@ minimum =min(temperatures)
 maximum = max(temperatures)
 print(minimum)
 print(maximum)
+
+#
+
+num = []
+for n in range(2,11,2):
+    print(n)
+
+#
+
+num = [n for n in range(2,11) if n%2 ==0]
+print(num)
+
+#
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matrix[0])
+print(matrix[1][1])
+
+#
+
+data = [["a", "b"], ["c", "d"], ["e", "f"]]
+print(data[0][0:2][0:1])
+
+#
+
+animals = ["кошка", "собака", "птица"]
+print(animals)
+
+#
+
+fruits = ["яблоко", "груша", "банан"]
+print(fruits[0])
+
+#
+
+items = []
+items.append("книга")
+print(items)
+
+#
+
+colors = ["красный", "синий", "зеленый"]
+print(len(colors))
+
+#
+
+tools = ["молоток", "пила", "отвертка"]
+print("пила" in tools)
+
+#
+
+numbers = [10, 20]
+numbers.append(30)
+print(numbers)
+
+#
+
+letters = ['a', 'b', 'c']
+print(letters[-1])
+
+#
+
+fruits = ["яблоко", "груша", "вишня"]
+fruits.remove("вишня")
+print(fruits)
+
+#
+
+ages = [25, 30, 18]
+ages[1] = 35
+print(ages)
+
+#
+
+empty = []
+print(empty != [])
+
+#
+
+mixed = [1, "текст", True]
+print(type(mixed))
