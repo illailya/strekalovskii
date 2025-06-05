@@ -225,3 +225,95 @@ if temperature > 20:
     print("Тепло")
 else:
     print("Холодно")
+
+
+x = 4
+print(x > 0 and x%2==0)
+
+#
+
+hour = 2
+if hour < 6:
+    print("Ночь")
+elif 6 <= hour < 12:
+    print("Утро")
+elif 12 <= hour < 18:
+    print("День")
+else:
+    print("Вечер")
+
+
+#
+
+a = True
+b = False
+c = True
+print(a == True and c == True or b == True and c == False)
+
+#
+
+num = 9
+if num %3==0:
+    print("Кратно 3")
+else:
+    print("Не кратно 3")
+
+#
+
+is_weekend = True
+is_holiday = False
+print((is_weekend and not is_holiday) or (is_holiday and not is_weekend))
+
+#
+
+t = -5
+result = "Холодно" if t < 0 else "Тепло"
+print(result)
+
+#
+
+score = 85
+if score >= 90:
+    print("5")
+elif 80 <= score <90:
+    print("4")
+elif 70 <= score < 80:
+    print("3")
+elif score < 70:
+    print("2")
+
+#
+
+x = 10
+y = 20
+z = 15
+if x < y and y > z and z != x:
+    print("Да")
+else:
+    print("Нет")
+
+#
+
+has_ticket = True
+has_passport = True
+result = "Можно лететь" if has_ticket and has_passport else "Нельзя лететь"
+print(result)
+
+#
+
+time = 15  # текущий час (0-23)
+is_weekend = True
+if 10 <= time <=18 and is_weekend == False:
+    print("Можно")
+elif 10 <= time <= 18 and is_weekend == True:
+    print("Нельзя")
+elif 19 <= time <= 23:
+    print("Можно")
+elif 0 <= time <= 5 or 6 <= time <= 9:
+    print("Нельзя")
+
+#
+
+is_raining = True
+is_windy = False
+print("Беру зонт" if is_raining and not is_windy else "Остаюсь дома")

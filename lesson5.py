@@ -138,3 +138,109 @@ if "bob@example.com" in user.values():
     print(True)
 else:
     print(False)
+
+
+#
+
+student = {"name": "Alex", "age": 20, "courses": ["Math", "Physics"]}
+print(student["age"])
+
+#
+
+car = {"brand": "Toyota", "model": "Corolla", "year": 2020}
+car["color"] = "red"
+car["year"] = 2022
+print(car)
+
+#
+
+inventory = {"apples": 10, "bananas": 5, "oranges": 8, "grapes": 15}
+del inventory["bananas"]
+print(inventory)
+
+#
+
+print("Ключ есть:", "name" in user)
+print("Значение есть:", "alice@example.com" in user.values())
+
+#
+
+book = {"title": "1984", "author": "George Orwell", "year": 1949}
+print("Ключи: ", book.keys())
+print("Значения: ", book.values())
+print("Пары:", book.items())
+
+
+#
+
+car = {"Toyota": 1998, "BMW": 2005, "mersedes": 1998, "audi": 2001}
+print(car)
+mers = list(car.keys())[2]
+result = car[mers]
+print(result)
+
+#
+
+cities = {"Москва": 12500, "Санкт-Петербург": 5400, "Омск": 5478, "Пермь": 4745}
+maximum = max(cities, key=cities.get)
+print(maximum)
+cities["Казань"] = 1300
+for city in cities:
+    cities[city] = int(cities[city] * 1.05)
+print(cities)
+
+#
+
+countries = {
+    "Франция": {"capital": "Париж", "population": 67.4, "languages": ["французский"]},
+    "Канада": {"capital": "Оттава", "population": 38.0, "languages": ["английский", "французский"]},
+"Россия": {"capital": "Москва", "population": 165.4, "languages": ["Русский"]}
+}
+countries["Беларусь"] = {"capital": "Минск", "population": 16.4, "languages": ["Русский"]}
+print(countries)
+
+#
+
+colors = {"red": "красный", "blue": "синий", "green": "зеленый"}
+print("синий" in colors.values())
+
+#
+
+person = {"name": "Сергей", "age": 25}
+person.update({"city": "Казань"})
+print(person)
+
+#
+
+original = {"a": 1, "b": 2}
+copi1 = original.copy()
+copi1.update({"c": 3})
+print(copi1)
+print(original)
+
+#
+
+data = {"id": 101, "status": "active", "score": 45}
+delet = data.pop("status")
+print(data)
+print(delet)
+
+#
+
+user = {"name": "Анна", "email": "anna@example.com", "age": 28}
+delet1 = user.pop("phone", None)
+print(delet1)
+if delet1 is None:
+    print("Ключ 'phone' отсутствует")
+
+#
+
+products = {
+    "яблоки": 80,
+    "бананы": 60,
+    "молоко": 100
+}
+if "Хлеб" in products:
+    print(products["Хлеб"])
+else:
+    print(products.update()["Хлеб"] = 40)

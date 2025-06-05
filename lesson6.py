@@ -125,3 +125,96 @@ x = 2
 while x < 7:
     print(x)
     x += 2
+
+#
+
+text = "Python"
+for result in text:
+    print(result)
+
+#
+
+for num in range(0,10,2):
+    print(num)
+
+#
+
+for num in range(1,6):
+    print(num **2)
+
+#
+
+x = 5
+while x >= 1:
+    print(x)
+    x -= 1
+
+#
+x = 1
+while x < 10:
+
+    print(x)
+    x += 1
+    if x >= 5:
+     break
+
+
+#
+
+for num in range(0,10,2):
+    print(num)
+
+#
+
+x = 10
+while x >0:
+    print(x)
+    x -=1
+
+
+#
+
+
+
+animals = ["кошка", "собака", "попугай", "хомяк", "рыбка"]
+count = 0
+for animal in animals:
+    if len(animal):  # Проверяем чётность длины слова
+        print(f"{animal} ({len(animal)} букв)")
+        count += 1
+print(f"Всего: {count}")
+
+#
+
+fruits = ["яблоко", "банан", "вишня"]
+for fruit in fruits:
+    print(fruit)
+
+#
+
+for num in range(3,9):
+    print(num)
+
+#
+
+x = 5
+while x >= 1:
+    print(x)
+    x -=1
+print("Старт! ")
+
+#
+
+x = 1
+while x < 10:
+    if x == 5:  # Проверяем ДО вывода и увеличения
+        break
+    print(x)
+    x += 1
+
+#
+
+for num in range(2,11,2):
+    print(num)
+
+
