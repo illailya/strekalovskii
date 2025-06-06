@@ -73,3 +73,94 @@ with open("hello.txt", "r", encoding="utf-8") as file:
         print("Да, слово найдено")
     else:
         print("Нет, такого слова нет")
+
+
+#
+
+with open("numbers.txt", "w", encoding="utf-8") as file:
+    for number in range(1,11):
+     file.write(f"{number}\n")
+
+
+#
+
+with open("greeting.txt", "w", encoding="utf-8") as file:
+    file.write( "Hello, World!")
+with open("greeting.txt", "r", encoding="utf-8")as file:
+    content = file.read()
+print(content)
+
+#
+
+with open("colors.txt", "w", encoding="utf-8") as file:
+    file.write("синий\n" "белый\n" "зеленый")
+with open("colors.txt", "r", encoding="utf-8") as file:
+    content = file.readline()
+    print(content)
+
+
+#
+
+with open("data.txt", "w", encoding="utf-8") as file:
+    file.write("Python\n3.9\n")
+with open("data.txt", "r", encoding="utf-8") as file:
+    content = file.readlines()[::-1]
+    print(''.join(content))
+
+
+#
+
+with open("animals.txt", "w", encoding="utf-8") as animal:
+    animal.write("кот\nсобака\nпопугай\n")
+with open("animals.txt", "r", encoding="utf-8")as animal:
+    animals = animal.readlines()
+    print(animals)
+
+#
+
+with open("numbers.txt", "w", encoding="utf-8") as numbers:
+    for number in range(1,6):
+      numbers.write(f"{number}\n")
+with open("numbers.txt", "r", encoding="utf-8") as numbers:
+    number = numbers.readlines()
+    for num in number:
+     print(num.strip())
+
+
+#
+
+with open("greeting.txt", "w", encoding="utf-8") as file:
+    file.write("Hello, World!")
+with open("greeting.txt", "r", encoding="utf-8") as file:
+    result = file.read()
+    print(result)
+
+
+#
+
+with open("data.txt", "w", encoding="utf-8") as file:
+    file.write("apple\nbanana\norange\n")
+with open("data.txt", "r", encoding="utf-8") as file:
+    result = file.readlines()
+    print("".join(result))
+    print(f"Количество строк: {len(result)}")
+with open("data.txt", "a", encoding="utf-8") as file:
+    file.write("watermelon")
+with open("data.txt", "r", encoding="utf-8") as file:
+    result = file.read()
+    print(result)
+
+
+#
+
+with open("words.txt", "w", encoding="utf-8") as file:
+    file.write("яблоко\nгруша\nананас\nвишня\nарбуз\n")
+with open("words.txt", "r", encoding="utf-8") as file:
+    results = file.read().splitlines()
+    max_result = ""
+    max_length = 0
+    for result in results:
+        if len(result) > max_length:
+            max_result = result
+            max_length = len(result)
+print(f" Самое длинное слово {max_result} состоит из {max_length} слов")

@@ -217,4 +217,86 @@ while x < 10:
 for num in range(2,11,2):
     print(num)
 
+#
+
+numbers = [4, 2, 9, 1, 7, 5]
+num = numbers[:3]
+print(num)
+numbers.sort()
+print(numbers)
+
+#
+
+colors = ["красный", "синий", "зеленый", "желтый"]
+colors.insert(1, "оранжевый")
+colors.remove("зеленый")
+colors.reverse()
+print(colors)
+
+#
+
+animals = ["кошка", "собака", "хомяк"]
+for animal in animals:
+    print(f"Животное: {animal}" )
+
+#
+
+for numbers in range(15,9,-1):
+    print(numbers)
+
+#
+
+count = 3
+while count >= 0:
+    print(count)
+    count -=1
+print("Старт!")
+
+#
+
+for num in range(1, 11):
+    if num %4 ==0:
+        break
+    print(num)
+
+#
+
+for num in range(1, 7):
+    continue
+    print(num)
+
+#
+a = "задача"
+print(a)
+
+
+numbers = [3, 7, 2, 8, 4, 10]
+for num in numbers:
+    if num > 5:
+        print(f"{num} (больше 5)")
+    else:
+        print(num)
+
+#
+
+
+numbers = [3, 7, 2, 8, 4, 10]
+for num1 in numbers:
+    if num1 == 10:
+        break
+    print(num1)
+
+
+#
+
+
+numbers = [3, 7, 2, 8, 4, 10]
+for num2 in numbers:
+    if num2 %2 == 0:
+        print(f"{num2} Четное")
+    else:
+        print(num2)
+
+
+#
 
