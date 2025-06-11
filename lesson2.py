@@ -294,3 +294,66 @@ text = text.strip()
 text = text.capitalize()
 text = text.replace("2", "две").replace("1", "одна")
 print(text)
+
+#
+
+text = "автоматизация"
+print(text[4])
+
+#
+
+phrase = "Программирование"
+print(phrase[3:8])
+
+#
+
+name = "Алексей"
+age = 25
+print(f"Меня зовут {name}, мне {age} лет")
+
+#
+
+text = "  Здравствуй, мир!  "
+text = text.replace("мир", "Python")
+print(text)
+text = text.strip()
+print(text)
+print(text.upper())
+
+#
+
+city = "Москва"
+temperature = "20"
+result = "Город: " + city + "," + " температура: " + temperature + "\u00b0" + "C"
+print(result)
+
+#
+
+password = "QwErTy1#"
+result = len(password)
+if result >= 10:
+    print("Надёжный пароль")
+else:
+    print("Слишком короткий пароль")
+print(password)
+
+#
+
+message = "  Hello, World!  "
+
+message = message.strip()
+print(message)
+
+message = message.replace("World", "Python")
+print(message)
+
+message = message.lower()
+print(message)
+
+#
+
+product = "яблоки"
+price = 89.99
+quantity = 3
+
+print(f"Итого: {quantity} кг {product} за {quantity * price} руб.")

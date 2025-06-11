@@ -302,3 +302,54 @@ print(empty != [])
 
 mixed = [1, "текст", True]
 print(type(mixed))
+
+
+#
+
+fruits = ["банан", "киви", "абрикос"]
+
+#
+
+colors = ["красный", "зелёный", "синий", "жёлтый"]
+
+print(colors[1])
+
+#
+
+animals = ["кошка", "собака", "хомяк"]
+animals.append("попугай")
+animals[1] = "рыбка"
+print(animals)
+
+#
+
+numbers = [10, 20, 40, 50]
+numbers.insert(2, 30)
+print(numbers)
+
+#
+
+tools = ["молоток", "отвёртка", "пила", "гаечный ключ"]
+
+tools.remove("пила")
+print(tools)
+
+#
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f']
+
+new_letter = letters[1:4]
+print(new_letter)
+
+#
+
+list1 = [1, 2, 3]
+list2 = [4, 5]
+result = list1 + list2
+print(result)
+
+#
+
+data = [True, False, 1, "текст", 3.14]
+data.clear()
+print(data)

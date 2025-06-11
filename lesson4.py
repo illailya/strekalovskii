@@ -317,3 +317,62 @@ elif 0 <= time <= 5 or 6 <= time <= 9:
 is_raining = True
 is_windy = False
 print("Беру зонт" if is_raining and not is_windy else "Остаюсь дома")
+
+#
+
+x = 5
+if x > 0:
+   print("Число положительное")
+elif x < 0:
+    print("Число отрицательное")
+else:
+    print("ноль")
+
+#
+
+age = 18
+
+status = "Взрослый" if age >= 18 else "Ребенок"
+print(status)
+
+#
+
+has_ticket = True
+has_passport = False
+if has_ticket and has_passport:
+    print("Можно лететь")
+else:
+    print("Нельзя лететь")
+
+#
+
+time = 3
+if 5 <= time <= 11:
+    print("Утро")
+elif 12 <= time <= 17:
+    print("День")
+elif 18 <= time <= 22:
+    print("Вечер")
+elif time == 23 or 00 <= time <=4:
+    print("Ночь")
+
+#
+
+temperature = 25
+is_weekend = False
+is_sunny = True
+if 18 <= temperature <= 28 and is_weekend == False and is_sunny:
+    print("Идеально для прогулки!")
+else:
+    print("Лучше остаться дома")
+
+#
+
+age = 15
+has_parents_permission = True
+if age >= 16:
+    print("Билет можно купить")
+elif 12 <= age <= 15 and has_parents_permission:
+    print("Билет можно купить с разрешением")
+else:
+    print("Фильм недоступен")

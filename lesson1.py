@@ -270,3 +270,76 @@ quantity = 3
 print(f"Тип item: {type(item)}")
 print(f"Тип weight: {type(weight)}")
 print(f"Тип quantity: {type(quantity)}")
+
+#
+
+a = 5
+b = 3
+print(f"Сложение: {a+b}")
+print(f"Вычетание: {a-b}")
+print(f"Умножение: {a*b}")
+print(f"Деление: {a//b}")
+
+
+#
+
+num = 10
+text = "Python"
+flag = True
+print(type(num))
+print(type(text))
+print(type(flag))
+
+#
+
+x = 7
+y = 10
+print(x > y)
+print(x <= y)
+print(x != y)
+
+#
+
+a = "123"  # строка
+b = 45     # целое число
+c = 3.14   # дробное число
+
+a_num = int(a)
+b_string = str(b)
+c_num = int(c)
+print(type(a_num))
+print(type(b_string))
+print(type(c_num))
+
+#
+
+counter = 0
+counter = 5
+counter = "готово"
+print(counter)
+
+#
+
+num1 = "50"   # строка
+num2 = 40     # целое число
+
+num1_int = int(num1)
+print(num1_int > num2)
+print(num1_int == num2)
+
+#
+
+price = "150"
+discount = 30
+is_valid = "True"
+
+int_price = int(price)
+boll_is_valid = bool(is_valid)
+result_discount = int_price- (150 * (30/100))
+print(result_discount)
+print(type(boll_is_valid))
+print(boll_is_valid)
+
+#
+
+

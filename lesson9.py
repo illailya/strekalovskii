@@ -343,3 +343,57 @@ print(player.status())  # Трек: Трек 1, Громкость: 50%, Сос�
 
 player.next_track().set_volume(80)  # Цепочка вызовов
 print(player.status())
+
+#
+
+class BankCard:
+    def __init__(self, cardholder = None, balance = 0, is_blocked = False):
+        self.cardholder = cardholder
+        self.balance = balance
+        self.is_blocked = is_blocked
+    def deposit(self, amount):
+        self.balance += amount
+        return f"Баланс пополнен на {amount} рублей"
+    def spend(self, amount):
+        if self.balance > 0 and self.is_blocked == True:
+           self.balance -= amount
+           return f"Списано {amount} рублей"
+    def block(self):
+        self.is_blocked = True
+        return f"Карта заблокирована"
+    def status(self):
+        cart = "заблокирована" if self.is_blocked else "активна"
+        return f"Владелец: {self.cardholder}, Баланс: {self.balance}р., Статус: {cart}"
+bank = BankCard()
+print(bank.deposit(500))
+print(bank.status())
+print(bank.block())
+
+#
+
+class Thermometer:
+    def __init__(self, current_temp = 36.6, unit = "C"):
+        self.current_temp = current_temp
+        self.unit = unit
+
+    def update_temp(self, new_temp):
+        self.current_temp = new_temp
+        return self
+
+    def change_unit(self):
+        if self.unit == "C":
+            self.current_temp = self.current_temp * 9/5 + 32
+            self.unit = "F"
+        elif self.unit == "F":
+            self.current_temp = (self.current_temp - 32) * 5/9
+            self.unit = "C"
+        else:
+            print(f"Значение некорректно")
+
+    def status(self):
+        return f"Температура: {self.current_temp}°{self.unit}"
+therm = Thermometer()
+print(therm.change_unit())
+print(therm.change_unit())
+
+print(therm.status())
