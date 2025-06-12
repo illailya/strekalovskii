@@ -233,14 +233,172 @@ print(delet1)
 if delet1 is None:
     print("Ключ 'phone' отсутствует")
 
+
 #
 
-products = {
-    "яблоки": 80,
-    "бананы": 60,
-    "молоко": 100
+fruit_colors = {
+    "Яблоко": "Красный",
+    "Банан": "Желтый",
+    "Апельсин": "Оранжевый"
 }
-if "Хлеб" in products:
-    print(products["Хлеб"])
-else:
-    print(products.update()["Хлеб"] = 40)
+print(fruit_colors)
+
+#
+
+capitals = {"Россия": "Москва", "Франция": "Париж", "Япония": "Токио"}
+result = capitals["Франция"]
+result2 = capitals["Япония"]
+print(result, result2)
+
+#
+
+inventory = {"яблоки": 10, "бананы": 5}
+inventory["апельсин"] = 8
+inventory["яблоки"] = 15
+print(inventory)
+
+#
+
+student = {"name": "Алексей", "age": 20, "course": "Python", "grade": "A"}
+del student["grade"]
+deleted = student.pop("age")
+print(student)
+print(deleted)
+
+#
+
+book = {
+    "title": "Гарри Поттер",
+    "author": "Дж.К. Роулинг",
+    "year": 1997
+}
+print(book.keys())
+print(book.values())
+print(book.items())
+
+#
+
+car = {
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2022
+}
+print("color" in car)
+print("Camry" in car.values())
+print(car.get("model"))
+
+#
+
+grades = {}
+grades["Алексей"] = 5
+grades["Мария"] = 4
+grades["Иван"] = 3
+print(grades)
+grades["Алексей"] += 1
+print(grades)
+print("Екатерина" in grades.keys())
+
+#
+
+device = {
+    "type": "smartphone",
+    "brand": "Xiaomi",
+    "price": 25000
+}
+copi_device = device.copy()
+device.clear()
+print(copi_device)
+print(device)
+
+#
+
+# exchange = {"USD": 75.5, "EUR": 80.2, "CNY": 11.3}
+# currency = input("Введите сумму: ").upper()
+
+#
+
+# prices = {"apple": 0.5, "banana": 0.25, "orange": 0.75}
+# name_fruit = input("Введите название фрукта: ").lower()
+# if name_fruit in prices:
+#     print(f"Цена {name_fruit} - {prices[name_fruit]}")
+# else:
+#     print("Фрукт не найден")
+
+#
+
+student = {
+    'name': 'Alex',
+    'age': 20,
+    'university': 'MIT'
+}
+print(student["age"])
+
+#
+
+car = {
+    'brand': 'Toyota',
+    'model': 'Corolla'
+}
+car["year"] = 2020
+car["model"] = 'Camry'
+print(car)
+
+#
+
+laptop = {
+    'brand': 'Dell',
+    'RAM': '16GB',
+    'price': 1500,
+    'color': 'silver'
+}
+del laptop['price']
+print(laptop)
+
+#
+
+book = {
+    'title': 'Гарри Поттер',
+    'author': 'Дж.К. Роулинг',
+    'year': 1997,
+    'pages': 400
+}
+print(list(book))
+print(list(book.values()))
+
+#
+
+movie = {
+    'title': 'Inception',
+    'director': 'Christopher Nolan',
+    'year': 2010
+}
+print(f"Есть ключ 'rating'? {"rating" in movie}")
+print(f"Есть значение 'Christopher Nolan'? {'Christopher Nolan' in movie.values()}")
+
+#
+
+smartphone = {
+    'model': 'Galaxy S21',
+    'brand': 'Samsung',
+    'storage': 128,
+    'color': 'black'
+}
+smartphone["price"] = 800
+del smartphone["color"]
+print(f"Обновлённый словарь: {smartphone}")
+print(f"Ключ 'brand' есть? {'brand' in smartphone}")
+
+#
+
+student = {
+    'name': 'Алексей',
+    'grades': {
+        'math': 90,
+        'physics': 85,
+        'history': 78
+    }
+}
+physics_grade = student['grades']["physics"]
+print(f"Оценка по физике: {physics_grade}")
+student['grades']['chemistry'] = 82
+print(f"Обновленный словарь: {student}")
