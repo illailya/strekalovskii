@@ -1,4 +1,6 @@
 #ООП ч.1
+from itertools import count
+
 
 class Book:
     COVER_COLOR = "red"
@@ -397,3 +399,150 @@ print(therm.change_unit())
 print(therm.change_unit())
 
 print(therm.status())
+
+#
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def info(self):
+        print({self.name}, {self.age})
+person = Person("Анна", 25)
+print(person.name)
+print(person.age)
+
+#
+
+class Car:
+    def start_engine(self, text = "Двигатель запущен"):
+        return text
+car = Car()
+result1 = car.start_engine()
+print(result1)
+#правильное решение
+class Car:
+    def start_engine(self):
+        print("Двигатель запущен")
+car = Car()
+car.start_engine()
+
+
+#
+
+class SpaceShip:
+    fuel_type = "гиперплазма"
+    def show_fuel(self):
+        print(self.fuel_type)
+ship1 = SpaceShip()
+ship1.show_fuel()
+
+#
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        print(f"Книга {self.title}, автор {self.author}")
+book1 = Book("1984", "Оруэлл")
+
+#
+
+class Vehicle:
+    def __init__(self, max_speed):
+        self.max_speed = max_speed
+    def drive(self):
+        print(f"Велосипед едет на скорости {self.max_speed} км/ч на передаче {self.gear_count}")
+    def __str__(self):
+        return f"Велосипед с {self.gear_count} передачами"
+class Bicycle(Vehicle):
+    def __init__(self, max_speed, gear_count):
+        self.max_speed =max_speed
+        self.gear_count = gear_count
+    def ring_bell(self):
+        print(f"Дзинь-дзинь!")
+bike = Bicycle(30, 7)
+bike.drive()
+bike.ring_bell()
+print(bike)
+
+#
+
+class Temperature:
+    def __init__(self, celsius):
+        self.__celsius = celsius
+
+    def get_celsius(self):
+        return self.__celsius
+
+    def set_celsius(self, new_temp):
+        self.__celsius = new_temp
+
+t = Temperature(25)
+print(t.get_celsius())  # Должно вывести 25
+t.set_celsius(30)
+print(t.get_celsius())
+
+#
+
+class Cat:
+    def __init__(self, name):
+        self.name = name
+
+    def meow(self):
+        print(f"{self.name} говорит: Мяу!")
+cat = Cat("Мурзик")
+cat.meow()
+
+#
+
+class Counter:
+
+    def __init__(self):
+        self.count = 0
+
+    def increment(self):
+        self.count += 1
+
+    def show(self):
+        print(self.count)
+
+c = Counter()  # создаём объект
+c.increment()  # увеличиваем счётчик
+c.increment()  # увеличиваем счётчик
+c.increment()  # увеличиваем счётчик
+c.show()
+
+#
+
+class Basket:
+    def __init__(self):
+        self.items = []
+
+    def add(self, item):
+        self.items.append(item)
+
+    def show(self):
+        print(self.items)
+
+basket = Basket()
+print(basket.items)
+basket.add("Второй")
+print(basket.items)
+
+#
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.grades = []
+
+    def add_grade(self, grade):
+        if 1 <= grade <= 5:
+            self.grades.append(grade)
+
+    def get_average(self):
+        return sum(self.grades) / len(self.grades)
+s = Student("Анна")
+s.add_grade(1)
+print(s.get_average())

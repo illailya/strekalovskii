@@ -164,3 +164,38 @@ with open("words.txt", "r", encoding="utf-8") as file:
             max_result = result
             max_length = len(result)
 print(f" Самое длинное слово {max_result} состоит из {max_length} слов")
+
+#
+
+with open("numbers.txt", "w", encoding="utf-8") as file:
+    file.write("1\n2\n3\n4\n5\n")
+with open("numbers.txt", "r", encoding="utf-8") as file:
+    result = file.read()
+    print(result)
+
+
+#
+
+with open("data.txt", "w", encoding="utf-8") as file:
+    file.write("Hello, Python!")
+with open("data.txt", "r", encoding="utf-8") as file:
+    text = file.read()
+    print(text)
+
+
+#
+
+with open("notes.txt", "w", encoding="utf-8") as file:
+    file.write("Понедельник: учеба\n")
+with open("notes.txt", "a", encoding="utf-8")as file:
+    file.write("Вторник: практика\n")
+with open("notes.txt", "r", encoding="utf-8") as file:
+    result = file.read()
+    print(result)
+
+#
+
+with open("secret.txt", "w", encoding="utf-8")as file:
+    file.write("Секретный текст")
+with open("secret.txt", "r", encoding="utf-8") as file:
+    text = "Файл не найден, создайте его!" if not file.read() else print(file.read())

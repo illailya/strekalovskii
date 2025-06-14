@@ -335,3 +335,81 @@ for num in range(5,0,-1):
 fruits = ["яблоко", "банан", "вишня"]
 for result in fruits:
     print(f"Фрукт: {result}")
+
+
+#
+total = 0
+for num in range(1,6):
+    total += num
+    print(f"Сумма: {total}")
+#алтернатива
+print(f"Сумма: {sum(range(1, 6))}")
+
+#
+
+x = 10
+while x >= 1:
+    print(f"Осталось: {x}")
+    x -= 1
+
+#
+
+letters = ["a", "b", "c", "d", "e"]
+for result in letters:
+    if result == "c":
+        print(f"Буква найдена: {result}")
+        break
+
+#
+
+for num in range(20,9,-1):
+    if num %2==0:
+        print(num)
+#альтернатива
+for num in range(20,9,-2):
+    print(num)
+
+# таблица умножения
+for a in range(1, 4):  # Первый множитель от 1 до 3
+    for b in range(1, 4):  # Второй множитель от 1 до 3
+        print(f"{a} * {b} = {a * b}")
+
+
+#
+
+for num in range(1,6):
+    print(num)
+
+
+#
+
+x = 5
+while x >=1:
+    print(x)
+    x -= 1
+
+#
+
+for num in range(2,11,2):
+    print(num)
+
+#
+
+total = 0
+for a in range(1,6):
+    total += a
+    print(total)
+# или
+
+print(sum(range(1,6)))
+
+#
+
+for a in range(1,4):
+    for b in range(1,4):
+        print(f"{a} * {b} = {a * b}")
+
+
+#
+
+print(f"*\n**\n***")
