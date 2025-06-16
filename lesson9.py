@@ -546,3 +546,115 @@ class Student:
 s = Student("Анна")
 s.add_grade(1)
 print(s.get_average())
+
+#
+
+class Book:
+    def __init__(self, title = "Неизвестно"):
+        self.title = title
+b = Book()
+print(b.title)
+b = Book("Гарри Поттер")
+print(b.title)
+
+#
+
+class Book:
+    def __init__(self, title = "Неизвестно"):
+        self.title = title
+
+    def info(self):
+        print(f"Книга: {self.title}")
+b = Book()
+print(b.title)
+b = Book("Гарри Поттер")
+print(b.title)
+b.info()
+b = Book("Война и мир")
+b.info()
+
+#
+
+class Student:
+    def __init__(self, name, year = 1):
+        self.name = name
+        self.year = year
+s1 = Student("Иван")
+print(s1.year)
+s2 = Student("Мария", 3)
+print(s2.year)
+
+#
+
+class Counter:
+    def __init__(self, count = 0):
+        self.count = count
+    def increment(self, ):
+        self.count += 1
+    def show(self):
+        return self.count
+c = Counter()
+c.increment()
+c.increment()
+c.increment()
+print(c.show())
+
+#
+
+class SpaceShip:
+    fuel_type = "гиперион"
+    def __init__(self, name):
+        self.name = name
+    def show_info(self):
+        print(f"Корабль {self.name}, тип топлива: {self.fuel_type}")
+ship1 = SpaceShip("Авангард")
+ship2 = SpaceShip("Пионер")
+ship1.show_info()
+ship2.show_info()
+SpaceShip.fuel_type = "криптон"
+ship2.show_info()
+
+#
+
+class Robot:
+    def __init__(self, name, battery = 100):
+        self.name = name
+        self.battery = battery
+    def charge(self):
+        self.battery = 100
+    def greet(self):
+        if self.battery >= 10:
+            self.battery -= 10
+            print(f"Привет, я {self.name}!")
+        elif self.battery < 10:
+            print("Требуется зарядка!")
+r = Robot("R2-D2")
+r.greet()
+r.greet()
+print(r.battery)
+r.charge()
+print(r.battery)
+
+#
+
+class BankAccount:
+    def __init__(self, owner, balance = 0):
+        self.balance = balance
+        self.owner = owner
+    def deposit(self, amount):
+        self.balance += amount
+    def withdraw(self,amount):
+        if self.balance >= amount:
+            self.balance -= amount
+    def show_balance(self):
+        print(f"Баланс {self.owner}: {self.balance} руб.")
+b = BankAccount("Илья", 1000)
+b.show_balance()
+b.deposit(500)
+b.show_balance()
+b.withdraw(700)
+b.show_balance()
+
+#
+
+class Temperature:
