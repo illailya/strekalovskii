@@ -402,3 +402,51 @@ physics_grade = student['grades']["physics"]
 print(f"Оценка по физике: {physics_grade}")
 student['grades']['chemistry'] = 82
 print(f"Обновленный словарь: {student}")
+
+#
+
+student = {
+    "name": "Илья",
+    "age": 33,
+    "courses": ["Math", "Science"]
+}
+print(student)
+
+#
+
+car = {"brand": "Toyota", "model": "Corolla", "year": 2020}
+print(car["model"])
+
+#
+
+person = {"name": "Alice", "age": 25}
+person["city"] = "New York"
+person["age"] = 26
+print(person)
+
+#
+
+fruit = {"name": "Apple", "color": "red", "weight": 150}
+del fruit["weight"]
+print(fruit)
+
+#
+
+book = {"title": "Python 101", "author": "John Doe", "pages": 200}
+print(book.keys())
+print(book.values())
+print(book.items())
+
+#
+
+device = {"type": "laptop", "brand": "Dell", "price": 999}
+print("brand" in device.keys())
+print("phone" in device.values())
+
+#
+
+colors = {"red": "#FF0000", "green": "#00FF00", "blue": "#0000FF"}
+result = colors["green"] if "green" in colors.keys() else "Not found"
+print(result)
+deleted = colors.pop("blue")
+print(deleted)

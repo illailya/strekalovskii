@@ -353,3 +353,52 @@ print(result)
 data = [True, False, 1, "текст", 3.14]
 data.clear()
 print(data)
+
+#
+
+fruits = ["Банан", "Яблоко", "Киви"]
+print(fruits)
+
+#
+
+numbers = [10, 20, 30, 40, 50]
+print(numbers[1])
+
+#
+
+animals = ["cat", "dog"]
+animals.append("bird")
+animals[0] = "hamster"
+print(animals)
+
+#
+
+colors = ["red", "blue", "green"]
+colors.insert(1, "yellow")
+print(colors)
+
+#
+
+letters = ["a", "b", "c", "d"]
+letters[2] = "x"
+print(letters)
+
+#
+
+items = ["book", "pen", "pencil", "eraser"]
+del items[2]
+print(items)
+items.clear()
+print(items)
+
+#
+
+nums = [1, 2, 3, 4, 5, 6]
+print(nums[1:4])
+
+#
+
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+result = list1 + list2
+print(result)

@@ -357,3 +357,39 @@ price = 89.99
 quantity = 3
 
 print(f"Итого: {quantity} кг {product} за {quantity * price} руб.")
+
+#
+
+word = "автоматизация"
+print(word[2])
+
+#
+
+text = "Hello, World!"
+print(text[4:10])
+
+#
+
+name = "Анна"
+age = 25
+message = f"Меня зовут {name}, мне {age} лет."
+print(message)
+
+#
+
+s = "  PyThOn  "
+result = s.strip().lower().replace("th", "TH")
+print(result)
+
+
+#
+
+s1 = "Hello"
+s2 = "World"
+greeting = s1 + " " + s2
+print(greeting)
+
+#
+
+text = "Автоматизация"
+print(len(text))

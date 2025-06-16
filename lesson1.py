@@ -342,4 +342,39 @@ print(boll_is_valid)
 
 #
 
+a = 7
+b ="13"
+c =[1, 2, 3]
+print(type(a), type(b), type(c))
 
+#
+
+temperature = 25
+humidity = 70
+result = temperature > 20 and humidity < 80
+print(result)
+
+#
+
+price = "150.5"
+float_price = float(price)
+total = float_price * 2
+print(total)
+
+#
+
+numbers = [10, 20, 30]
+numbers[0] = 15
+print(numbers)
+
+#
+
+text = "автоматизация"
+print(text[-1])
+
+#
+
+has_key = True
+is_door_open = False
+can_enter = has_key or is_door_open
+print(can_enter)

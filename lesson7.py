@@ -199,3 +199,61 @@ with open("secret.txt", "w", encoding="utf-8")as file:
     file.write("Секретный текст")
 with open("secret.txt", "r", encoding="utf-8") as file:
     text = "Файл не найден, создайте его!" if not file.read() else print(file.read())
+
+#
+
+with open("test.txt", "w", encoding="utf-8") as file:
+    file.write("Hello, World!")
+with open("test.txt", "r", encoding="utf-8") as file:
+    result = file.read()
+    print(result)
+
+#
+
+with open("output.txt", "w", encoding="utf-8") as file:
+    file.write("Python is awesome!")
+
+#
+
+with open("notes.txt", "a", encoding="utf-8") as file:
+    file.write("New note\n")
+
+
+#
+
+with open("data.txt", "r", encoding="utf-8") as file:
+    result = file.read()
+    print(result)
+
+#
+
+with open("log.txt", "w", encoding="utf-8") as file:
+    file.write("2023-11-15")
+
+#
+
+with open("lines.txt", "w", encoding="utf-8") as file:
+    file.write("1: первая строка,\n2: вторая строка,\n3: третья строка\n")
+with open("lines.txt", "r", encoding="utf-8") as file:
+    result = file.read()
+print(result)
+
+
+#
+
+#P.S. Для проверки существования файла нужно:
+
+import os
+if os.path.exists("lines.txt"):
+    print("Файл найден")
+else:
+    print( "Файл не найден")
+
+
+#(Построчное чтение с нумерацией):
+with open("lines.txt", "w", encoding="utf-8") as file:
+    file.write("Первая строка\nВторая строка\nТретья строка")
+
+with open("lines.txt", "r", encoding="utf-8") as file:
+    for line_number, line in enumerate(file, start=1):
+        print(f"{line_number}: {line.strip()}")

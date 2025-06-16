@@ -413,3 +413,39 @@ for a in range(1,4):
 #
 
 print(f"*\n**\n***")
+
+#
+
+fruits = ["яблоко", "банан", "апельсин"]
+for fruit in fruits:
+    print(fruit)
+
+#
+
+for num in range(5,11):
+    print(num)
+
+for num in range(1,6):
+    print(num ** 2)
+
+#
+
+i = 0
+while i < 5:
+    print(i)
+    i +=1
+
+#
+
+numbers = [1, 3, 5, 7, 9, 2, 4, 6]
+for number in numbers:
+    if number %2==0:
+        break
+    print(number)
+
+#
+
+temperatures = [25, 30, 15, 10, 35]
+for temp in temperatures:
+    if temp > 20:
+        print(temp)

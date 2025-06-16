@@ -376,3 +376,51 @@ elif 12 <= age <= 15 and has_parents_permission:
     print("Билет можно купить с разрешением")
 else:
     print("Фильм недоступен")
+
+#
+
+a = True
+b = False
+print(a or b)
+
+#
+
+x = 10
+print(x > 0)
+
+#
+
+num = 15
+if num > 10:
+    print("Больше 10")
+
+#
+
+age = 17
+if age >= 18:
+    print("Взрослый")
+else:
+    print("Ребенок")
+
+#
+
+score = 75
+if score >= 90:
+    print("Отлично")
+elif score >= 70:
+    print("Хорошо")
+else:
+    print("Плохо")
+
+#
+
+x = 5
+y = 12
+if x > 0 and y > 0:
+    print("Оба положительные")
+
+#
+
+temperature = 25
+weather = "Жарко" if temperature > 20 else "Холодно"
+print(weather)
