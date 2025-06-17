@@ -657,4 +657,120 @@ b.show_balance()
 
 #
 
-class Temperature:
+class Car:
+    pass
+
+
+car = Car()
+
+#
+
+class Dog:
+    species = "Canis familiaris"
+dog = Dog()
+print(dog.species)
+
+#
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+book = Book(1,2)
+print(book.title, book.author)
+
+#
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def introduce(self):
+        print(f"Привет, я {self.name}")
+p = Person("Илья")
+p.introduce()
+
+#
+
+class Laptop:
+    def __init__(self, brand="Lenovo", ram=8):
+        self.brand = brand
+        self.ram = ram
+l = Laptop()
+print(l.brand, l.ram)
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return 3.14 * (self.radius**2)
+circle = Circle(5)
+print(circle.area())
+
+#
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def study(self):
+        print(f"{self.name} учится")
+s = Student("илья", 33)
+s.study()
+
+#-
+
+class Robot:
+    pass
+r = Robot()
+
+#
+
+class Bird:
+    wings = 2
+b = Bird()
+
+#
+
+class Phone:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+p = Phone("nokia", "3310")
+
+#
+
+class Cat:
+    def meow(self):
+        print("Мяу!")
+c = Cat()
+
+#
+
+class Tree:
+    def __init__(self, height=10, type="Дуб"):
+        self.height = height
+        self.type = type
+t = Tree()
+
+#
+
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    def area(self):
+        return self.width * self.height
+
+
+r = Rectangle(5, 5)
+
+
+#
+
+class Teacher:
+    def __init__(self, name, subject):
+        self.name = name
+        self.subject = subject
+    def teach(self):
+        print(f"{self.name} преподает {self.subject}")
+t = Teacher("Илья", "Математика")
+t.teach()
