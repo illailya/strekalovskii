@@ -129,3 +129,145 @@ def print_user_data(**kwargs):
 
 
 print_user_data(name="Анна", age=25, city="Москва")
+
+#
+
+def greet():
+    print("Привет, мир!")
+greet()
+
+#
+
+def multiply(a, b):
+    return a * b
+print(multiply(5, 5))
+
+#
+
+def power(x, n=2):
+    return x **n
+print(power(5,4))
+
+#
+
+def log_me(func):
+    def wrapper():
+        print("Функция вызвана")
+        return func()
+    return wrapper
+
+
+@log_me
+def say_hello():
+    print("Привет!")
+say_hello()
+
+#
+
+# def repeat(n):
+#     def decorator(func):
+#       def wrapper():
+#         return func()
+#     return wrapper
+# @repeat(3)
+# def say_hello():
+#     print("Привет!")
+# say_hello()
+
+#
+
+def hello(func):
+    def wrapper(*args, **kwargs):
+        print("Привет!")
+        func(*args, **kwargs)
+    return wrapper
+@hello
+def crfpfnm(name):
+    print(f"Меня зовут {name}")
+crfpfnm("Анна")
+
+#
+
+def surround_with_text(func):
+    def wrapper():
+        print("Начало работы функции")
+        func()
+        print("Функция завершила работу")
+    return wrapper
+@surround_with_text
+def hello():
+    print("Привет мир")
+hello()
+
+#
+
+def subtract(a, b):
+    return a - b
+result = subtract(5, 5)
+print(result)
+
+#
+
+def double_result(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        return result * 2
+    return wrapper
+@double_result
+def add(a, b):
+    return a + b
+print(add(2, 2))
+
+#
+
+def is_positive(num):
+    return num > 0
+print(is_positive(5))
+
+#
+
+def greet(name, greeting="Привет"):
+    return f"{greeting}, {name}!"
+print(greet("Анна"))
+print(greet("Петр", "Здравствуй"))
+
+#
+
+# def calculate_area():
+#     length = float(input("Введите ширину: "))
+#     width = float(input("Введите высоту: "))
+#     area = length * width
+#     print(f"Площадь: {area}")
+#
+# calculate_area()
+
+#
+
+def bold(func):
+    def wrapper():
+       result = func()
+       return f"<b>{result}</b>"
+    return wrapper
+@bold
+def get():
+    return "Привет!"
+print(get())
+
+#
+
+def power(base, exponent = 2):
+    return base ** exponent
+print(power(3,3))
+
+#
+
+def create_user(email, name="Пользователь", age=None):
+    user = {
+        "email": email,
+        "name": name
+    }
+    if age is not None:
+        user["age"] = age
+    return user
+print(create_user("test@mail.ru"))
+print(create_user("test@mail.ru", "илья", 33))

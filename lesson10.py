@@ -146,3 +146,106 @@ d = Dog("Бобик")
 print(a.speak())
 print(d.speak())
 print(d.fetch())
+
+#
+
+class Animal:
+    def eat(self):
+        print("Ест")
+class Dog(Animal):
+    pass
+
+#
+
+class Vehicle:
+    def move(self):
+        print("Двигается")
+class Car(Vehicle):
+    def move(self):
+     super().move()
+     print("На дороге")
+c = Car()
+c.move()
+
+#
+
+class Bird:
+    def fly(self):
+        print("Летит")
+class Penguin(Bird):
+    def fly(self):
+        print("Не умеет летать")
+
+#
+
+class Person:
+    pass
+class Employee(Person):
+    def __init__(self, salary):
+        self.salary = salary
+class Manager(Person):
+    def __init__(self, salary,  team_size):
+        super().__init__(salary)
+        self.team_size = team_size
+
+#
+
+class Shape:
+    def draw(self):
+        print("Рисует фигуру")
+class Circle(Shape):
+    def draw(self):
+        super().draw()
+        print("Окружность")
+c = Circle()
+c.draw()
+
+#
+
+class Camera:
+    def take_photo(self):
+        print("Делает фото")
+class Phone:
+    def call(self):
+        print("Звонит")
+class Smartphone(Camera, Phone):
+    pass
+s = Smartphone()
+
+#
+
+class BankAccount:
+    def __init__(self, balance = 0):
+        self.__balance = balance
+    def deposit(self, amount):
+            self.__balance += amount
+    def withdraw(self, amount):
+        if self.__balance >= amount:
+            self.__balance -= amount
+        else:
+            print("Недостаточно средств")
+    def get_balance(self):
+        return self.__balance
+b = BankAccount()
+print(b.get_balance())
+
+#
+
+class Computer:
+    def turn_on(self):
+        print("Компьютер включён")
+class GamingComputer(Computer):
+    def turn_on(self):
+        super().turn_on()
+        print("Игровой режим активирован")
+g = GamingComputer()
+g.turn_on()
+
+#
+
+class Bird:
+    wings = 2
+    def __init__(self, name):
+        self.name = name
+class Penguin(Bird):
+    wings = 0
