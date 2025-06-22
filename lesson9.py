@@ -774,3 +774,37 @@ class Teacher:
         print(f"{self.name} преподает {self.subject}")
 t = Teacher("Илья", "Математика")
 t.teach()
+
+
+#-
+
+class Car:
+    pass
+c = Car()
+
+#
+
+class Car:
+    wheels = 4
+
+c = Car()
+print(c.wheels)
+
+#
+
+class Car:
+    wheels = 4
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+    def start_engine(self):
+        print("Двигатель запущен!")
+    def get_info(self):
+        return f"Это {self.brand} {self.model}"
+
+c = Car("Toyota", "Corolla")
+print(c.wheels)
+c.start_engine()
+print(c.get_info())
+
+

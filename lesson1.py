@@ -378,3 +378,6 @@ has_key = True
 is_door_open = False
 can_enter = has_key or is_door_open
 print(can_enter)
+
+
+
