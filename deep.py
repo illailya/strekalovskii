@@ -2714,20 +2714,477 @@
 # # book = Book("1984", "Оруэлл")
 # # print(book.display_info())
 # #
-age = 25
-height = 1.75
-name = "Alex"
-print(f"{age}, {name}, {height}")
+# age = 25
+# height = 1.75
+# name = "Alex"
+# print(f"{age}, {name}, {height}")
+# #
+# text = "Hello, World!"
+# print(text.upper())
+# print(text.lower())
+# #
+# numbers = [1, 2, 3, 4, 5]
+# numbers.append(6)
+# print(numbers)
+# #
+# x = 10
+# result = "Больше 5" if x > 5 else  "5 или меньше"
+# print(result)
+# #
+# person = {"name": "Alice", "age": 30}
+# print(person["age"])
+# #
+# word = "Python"
+# for text in word:
+#     print(text)
+# #
+# with open("test.txt", "w", encoding="utf-8") as file:
+#     file.write("This is a test file.")
+# #
+# def add(a, b):
+#     return a + b
+# print(add(5,5))
+# #
+# def uppercase(func):
+#     def wrapper(*args, **kwargs):
+#         result = func(*args, **kwargs)
+#         return result.upper()
+#     return wrapper
+# @uppercase
+# def text(name, age):
+#     return f"Hello {name}, {age} года"
+# print(text("Илья","33"))
+# # #
+# class Car:
+#     def __init__(self,color):
+#         self.color = color
+#     def start_engine(self):
+#         return "Engine started"
+# car = Car("red")
+# #
+# class ElectricCar(Car):
+#     def __init__(self, color, battery_level = 100):
+#         super().__init__(color)
+#         self.battery_level = battery_level
+#     def show_battery(self):
+#           return self.battery_level
+# electro = ElectricCar("black")
+# print(electro.color)
+# print(electro.start_engine())
 #
-text = "Hello, World!"
-print(text.upper())
-print(text.lower())
+# count = 5
+# name = "Alex"
+# is_active = True
+# print(type(count))
+# print(type(name))
+# print(type(is_active))
+# #
+# s = "Python"
+# print(s)
+# class Dog:
+#     def __init__(self,name, age = 1):
+#         self.name = name
+#         self.age = age
+#     def bark(self):
+#         return  "Гав!"
+# dog = Dog("Шарик")
+# print(dog.bark())
+# class Puppy(Dog):
+#     def __init__(self,name, age, toy =  "мячик"):
+#         super().__init__(name, age)
+#         self.toy = toy
+# p = Puppy("drrgr",55)
+# class Book:
+#     library_name = "City Library"
+#     def __init__(self, title, author):
+#         self.title = title
+#         self.author = author
+#     def get_info(self):
+#         return f"Название: {self.title}, Автор: {self.author}"
+#     def update_title(self, new_title):
+#         self.title = new_title
+# book = Book("title", "author")
+# print(book.get_info())
+# book.update_title("tit2")
+# print(book.get_info())
+# book1 = Book("1984","Оруэлл")
+# print(book1.get_info())
+# #
+# class Car:
+#     pass
+# c = Car()
+from lesson3 import fruits
+
+
+# class BankAccount:
+#     def __init__(self, balance = 0):
+#         self.__balance = balance
+#     def deposit(self, amount):
+#         self.__balance += amount
+#     def get_balance(self):
+#         return self.__balance
+# b= BankAccount()
+# print(b.get_balance())
+class Animal:
+    def make_sound(self):
+        return "Some sound"
+    def get_species(self):
+        return "Animal"
+
+# class Dog(Animal):
+#     def __init__(self, name):
+#         self.name = name
+#     def make_sound(self):
+#         return "Гав!"
+#     def get_species(self):
+#         return "Собака"
+#     def info(self):
+#         return f"{self.name} {self.get_species()} {self.make_sound()}"
 #
-numbers = [1, 2, 3, 4, 5]
-numbers.append(6)
-print(numbers)
+# class Cat(Animal):
+#     def __init__(self, name):
+#         self.name = name
+#     def make_sound(self):
+#         return "Мяу!"
+#     def get_species(self):
+#         return "Кошка"
+#     def info(self):
+#         return f"{self.name} {self.get_species()} {self.make_sound()}"
+# dog = Dog("Шарик")
+# cat = Cat("Барсик")
+# print(dog.make_sound())  # "Гав!"
+# print(cat.get_species())
+# print(dog.name)
+# print(cat.name)
+# print(dog.info())
+# print(cat.info())
+# class Vector:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#     def __add__(self, other):
+#         # return Vector(self.x + other.x, self.y + other.y)
+#     def __str__(self):
+#         return f"Vector({self.x}, {self.y})"
+# v1 = Vector(2, 3)
+# v2 = Vector(1, 4)
+# v3 = v1 + v2
+# print(v3)
+# class Zoo(Animal):
+#     def __init__(self, animals = []):
+#         self.animals = animals
+#     def add_animal(self, animal):
+#         self.animals += animal
+#     def make_all_sounds(self):
+#         return Zoo.make_sound()
+# zoo = Zoo()
+# zoo.add_animal(Dog("Шарик"))
+# zoo.add_animal(Cat("Мурзик"))
+# print(zoo.make_all_sounds())
+# class Robot:
+#     pass
+# r = Robot()
 #
-x = 10
-result = "Больше 5" if x > 5 else  "5 или меньше"
+# class Robot:
+#     power_source = "батарейка"
+#     def __init__(self, name):
+#         self.__name = name
+#     def greet(self):
+#         return f"Привет, я робот по имени {self.__name}"
+#     def get_name(self):
+#         return self.__name
+#     def set_name(self,new_name):
+#         if new_name != "":
+#          self.__name = new_name
+#         else:
+#             print("Ошибка: имя не может быть пустым")
+# r = Robot("Ilya")
+# r2 = Robot("R2-D2")
+# print(r2.greet())
+# r.set_name("")
+# r.set_name("name")
+# print(r.get_name())
+#
+# class Android(Robot):
+#     def __init__(self, name, os):
+#         super().__init__(name)
+#         self.os = os
+#     def greet(self):
+#         if self.os == "Android":
+#             return "Я робот на Android!"
+#         else:
+#             return super().greet()
+# r = Android("R2-D2", "iOS")
+# print(r.greet())  # "Привет, я робот по имени R2-D2"
+#
+# a = Android("C-3PO", "Android")
+# print(a.greet())
+#
+# class RobotTeam:
+#     def __init__(self, Robot, Android):
+#         self.Robot = Robot
+#         self.Android = Android
+#     def team_greet(self):
+# fruits = ["банан", "яблоко", "киви"]
+# print(fruits)
+#
+# numbers = [10, 20, 30, 40, 50]
+# print(numbers[2])
+#
+# animals = ["кошка", "собака"]
+# animals.append("птица")
+# animals[0] = "рыба"
+# print(animals)
+#
+# colors = ["красный", "синий", "зеленый"]
+# colors.insert(1,"желтый")
+# print(colors)
+#
+# items = ["книга", "ручка", "карандаш", "ластик"]
+# items.remove("карандаш")
+# print(items)
+# items.clear()
+# print(items)
+#
+# letters = ['a', 'b', 'c', 'd', 'e', 'f']
+# print(letters[1:5])
+#
+# list1 = [1, 2, 3]
+# list2 = [4, 5, 6]
+# list = list1 + list2
+# print(list)
+#
+# numbers = [5, 10, 15, 20]
+# numbers[1] = 25
+# numbers[3] = 30
+# print(numbers)
+#
+# shopping_list = []
+# shopping_list.append("хлеб")
+# shopping_list.append("молоко")
+# shopping_list.append("яйца")
+# print(shopping_list)
+#
+# languages = ['Python', 'Java', 'C++', 'JavaScript']
+# del languages[2]
+# print(languages)
+#
+# alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+# print(alphabet[::2])
+#
+# x = 5
+# if x > 0:
+#     print("Число положительное")
+#
+# y = 4
+# result = "Чётное" if y % 2 == 0 else "Нечётное"
+# print(result)
+# t = 10
+# if t < 0:
+#     print("Холодно")
+# elif  0 <= t < 15:
+#      print("Прохладно")
+# elif 15 <= t < 25:
+#     print("Тепло")
+# else:
+#     print("Жарко")
+#
+# z = 12
+# if z % 2 == 0 and z % 3 == 0:
+#     print("Делится на 6")
+# else:
+#     print("Не делится")
+#
+# answer = ""
+# if answer.lower() == "да" or answer.lower() == "yes":
+#     print("Согласен")
+# elif answer.lower() == "нет" or answer.lower() == "no":
+#     print("Не согласен")
+# else:
+#     print("Не понял")
+#
+# num = 7
+# result = "Нулевым" if num == 0 else "Положительным чётным" if num % 2 == 0 and num > 0 else "Положительным нечётным" if num % 2 != 0 else "Отрицательным"
+# print(result)
+#
+# text = "Привет"
+# result = "Короткая" if len(text) < 5 else "Средняя" if 5 <= len(text) <= 9 else "Длинная"
+# print(result)
+#
+# items = ["Python", 42, True]
+# if type(items[0]) == str:
+#     print(f"Первый элемент - строка: {len(items[0])}")
+# elif type(items[0]) == int:
+#     result = "ЧЁТНОЕ" if items[0] % 2 == 0 else "НЕЧЁТНОЕ"
+#     print(f"Первый элемент - число: {result}")
+# else:
+#     print("Первый элемент другого типа")
+# fruit_prices = {
+#     "яблоко": 50,
+#     "банан": 30,
+#     "апельсин": 70
+# }
+#
+# student = {"name": "Алексей", "age": 20, "group": "A-101"}
+# student["age"]
+#
+# book = {"title": "1984", "author": "Оруэлл"}
+# book["year"] = 1949
+# book["title"] = "1984. Роман"
+#
+# pc = {"brand": "HP", "ram": 16, "os": "Windows", "price": 50000}
+# del pc["price"]
+#
+# country = {"name": "Япония", "capital": "Токио", "population": 126_500_000}
+# country.keys()
+# country.values()
+#
+# colors = {"red": "красный", "blue": "синий", "green": "зеленый"}
+# result =  "yellow" in colors.keys()
+# result2 =  "синий" in colors.values()
+#
+# weather = {"city": "Москва", "temp": -5, "wind": "северный"}
+# weather.get("humidity", "нет данных")
+#
+# user = {"login": "admin", "access_level": "full"}
+# user["password"] = "qwerty123"
+# result = "email" in user
+# print(result)
+# inventory = {"яблоки": 10, "груши": 5, "бананы": 7}
+# deleted_value = inventory.pop("груши")
+# profile = {"name": "Anna", "age": 30, "city": "Berlin"}
+# profile["age"] = 31
+# profile["job"] = "developer"
+# del profile["city"]
+# result = "country" in profile
+#
+# fruits = ["яблоко", "банан", "апельсин"]
+# for fruit in fruits:
+#     print(fruit)
+#
+# count = 0
+# while count < 5:
+#     print(count)
+#     count += 1
+#
+# numbers = [1, 3, 5, 7, 9, 2, 4, 6]
+# for number in numbers:
+#     if number % 2 == 0:
+#         break
+#     print(number)
+#
+# numbers = [1, 2, 3, 4, 5, 6]
+# for number in numbers:
+#     if number % 2 !=0:
+#         number +=10
+#         print(numb
+
+with open("notes.txt", "w", encoding="utf-8") as file:
+    file.write("Мои заметки")
+with open("notes.txt", "r", encoding="utf-8") as file:
+    result = file.read()
+
+lines = ["Первая строка", "Вторая строка", "Третья строка"]
+with open("output.txt", "w", encoding="utf-8") as file:
+    for line in lines:
+        file.write(f"{line}\n")
+with open("output.txt", "r", encoding="utf-8") as file:
+    for line in file:
+     print(line.strip())
+
+with open("notes.txt", "a", encoding="utf-8") as file:
+    file.write("\nДополнение")
+with open("notes.txt", "r", encoding="utf-8") as file:
+    result = file.read()
 print(result)
-#
+
+age = 25
+name = "Анна"
+print(f"{age}, {name}")
+
+text = "Привет, мир!"
+print(len(text))
+
+numbers = [1, 2, 3, 4]
+numbers.append(5)
+
+x = 10
+if x == 5:
+    print("Равно")
+else:
+    print("Не равно")
+
+book = {"title": "Гарри Поттер", "year": 1997}
+print(book["title"])
+
+for num in range(1,4):
+    print(num)
+
+with open("test.txt", "w", encoding="utf-8") as file:
+    file.write("Hello")
+
+def greet():
+    return "Привет!"
+
+print(greet())
+
+def uppercase(func):
+    def wrapper():
+        result = func()
+        return result.upper()
+    return wrapper
+@uppercase
+def text():
+    return "hello"
+print(text())
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+    def bark(self):
+        return "Гав!"
+d = Dog("шарик")
+
+class Cat(Animal):
+    def meow(self):
+        pass
+c = Cat()
+
+# def repeat(n):
+#     def count(func):
+#      def wrapper():
+#          for _ in range(n):
+#            result = func()
+#          return result
+#      return wrapper
+# @repeat(2)
+# def text():
+#     return "hello"
+# print(text())
+# ##########
+class Car:
+    def meow(self):
+        return "Мяу!"
+c = Car()
+
+class Dog:
+    species = "Canis familiaris"
+d = Dog()
+
+class Book:
+    def __init__(self, title):
+        self.title = title
+b = Book("qwerty")
+
+class Phone:
+    ph = "nok"
+p = Phone()
+print(type(p.ph))
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def introduce(self):
+        return f"Меня зовут {self.name}"
+p = Person("qaz")
+print(p.introduce())
