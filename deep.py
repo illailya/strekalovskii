@@ -3229,3 +3229,36 @@
 # print(a==b)
 # is_active = True
 # print(type(is_active))
+#
+# s = "Automation"
+# print(s[2])
+#
+# word = "Hello"
+# print(word[1:4])
+# str1 = "Hello, "
+# str2 = "world!"
+# result = str1 + str2
+# print(result)
+#
+# name = "Alice"
+# age = 25
+# print(f"Name: {name}, Age: {age}")
+#
+# text = " python "
+# text = text.strip()
+# print(text)
+#
+# s = "Automation"
+# print(len(s))
+#
+# text = "hello world"
+# text = text.upper()
+# print(text)
+#
+# s = "Programming"
+# print(s[-3:])
+#
+# part1 = "Auto"
+# part2 = "mation"
+# result = part1 + part2
+# print(result)
