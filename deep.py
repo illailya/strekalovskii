@@ -3262,3 +3262,40 @@
 # part2 = "mation"
 # result = part1 + part2
 # print(result)
+from lesson1 import result
+#
+# fruits = ["apple", "banana", "cherry"]
+# print(fruits)
+# numbers = [10, 20, 30, 40]
+# print(numbers[1])
+#
+# colors = ["red", "green"]
+# colors.append("blue")
+# print(colors)
+#
+# letters = ["a", "b", "c", "d", "e"]
+# print(letters[1:4])
+#
+# items = ["book", "pen", "pencil"]
+# items[1] = "notebook"
+# print(items)
+#
+# nums = [1, 2, 3, 4, 5]
+# nums.remove(3)
+# print(nums)
+#
+# list1 = [1, 2, 3]
+# list2 = [4, 5]
+# result = list1 + list2
+# print(result)
+#
+# animals = ["cat", "dog", "fish"]
+# animals.insert(1, "bird")
+# print(animals)
+#
+# data = [True, False, 1, "text"]
+# data.clear()
+# print(data)
+#
+# digits = [0, 1, 2, 3, 4, 5]
+# print(digits[:3])
