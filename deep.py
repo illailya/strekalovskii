@@ -3262,6 +3262,8 @@
 # part2 = "mation"
 # result = part1 + part2
 # print(result)
+import time
+
 from lesson1 import result
 #
 # fruits = ["apple", "banana", "cherry"]
@@ -3299,3 +3301,4 @@ from lesson1 import result
 #
 # digits = [0, 1, 2, 3, 4, 5]
 # print(digits[:3])
+
