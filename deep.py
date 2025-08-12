@@ -3302,3 +3302,56 @@ from lesson1 import result
 # digits = [0, 1, 2, 3, 4, 5]
 # print(digits[:3])
 
+x = 5
+if x > 0:
+    print("Число положительное")
+
+y = 10
+if y % 2 == 0:
+    print("Чётное")
+else:
+    print("Нечётное")
+
+age = 18
+if age >= 18:
+    status = "Взрослый"
+else:
+    status = "Ребёнок"
+
+age = 18
+result = "Взрослый" if age >= 18 else "Ребёнок"
+print(result)
+
+z = 15
+if z % 3 == 0 and z > 10:
+    print("Подходит")
+else:
+    print("Не подходит")
+
+n = -5
+if n < 0:
+    print("Отрицательное")
+elif n == 0:
+    print("Ноль")
+else:
+    print("Положительное")
+
+price = 250
+if price < 100:
+    print("Бюджетный")
+elif 100 <= price < 500:
+    print("Средний класс")
+else:
+    print("Премиум")
+
+num = 12
+if num % 2 == 0 and num % 3 == 0:
+    print("Делится на 6")
+elif num % 2 == 0 and num % 3 != 0:
+    print("Чётное, но не делится на 3")
+else:
+    print("Нечётное")
+
+
+for num in range(1,6):
+    print(f"{num}: {num ** 2}")
