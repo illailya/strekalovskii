@@ -3355,3 +3355,76 @@ else:
 
 for num in range(1,6):
     print(f"{num}: {num ** 2}")
+
+
+student = {
+    "имя": "Алексей",
+    "возраст": 20,
+    "курс": 2
+}
+print(student["возраст"])
+
+car = {
+    "марка": "Toyota",
+    "модель": "Camry"
+}
+car["год"] = 2020
+car["модель"] = "Corolla"
+print(car)
+
+book = {
+    "название": "1984",
+    "автор": "Джордж Оруэлл",
+    "год": 1949,
+    "жанр": "антиутопия"
+}
+del book["жанр"]
+print(book)
+
+country = {
+    "название": "Япония",
+    "столица": "Токио",
+    "население": 125_800_000
+}
+print(country.keys())
+print(country.values())
+
+movie = {
+    "название": "Крестный отец",
+    "год": 1972,
+    "режиссер": "Фрэнсис Форд Коппола"
+}
+
+result = "режиссер" in movie.keys()
+result2 = "Квентин Тарантино" in movie.values()
+print(result, result2)
+
+phone = {
+    "модель": "iPhone 13",
+    "память": "128GB"
+}
+phone["цвет"] = "синий"
+print("цвет" in phone.keys())
+print(phone.values())
+
+university = {
+    "название": "МГУ",
+    "адрес": {
+        "город": "Москва",
+        "улица": "Ленинские горы"
+    }
+}
+
+print(university["название"])
+print(university["адрес"]["город"])
+
+laptop = {
+    "модель": "MacBook Pro",
+    "характеристики": {
+        "год": 2023,
+        "оперативная память": "16GB"
+    }
+}
+laptop["характеристики"]["год"] = 2025
+laptop["характеристики"]["SSD"] = "1TB"
+print(laptop)
