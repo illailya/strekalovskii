@@ -3302,129 +3302,204 @@ from lesson1 import result
 # digits = [0, 1, 2, 3, 4, 5]
 # print(digits[:3])
 
-x = 5
-if x > 0:
-    print("Число положительное")
+# x = 5
+# if x > 0:
+#     print("Число положительное")
+#
+# y = 10
+# if y % 2 == 0:
+#     print("Чётное")
+# else:
+#     print("Нечётное")
+#
+# age = 18
+# if age >= 18:
+#     status = "Взрослый"
+# else:
+#     status = "Ребёнок"
+#
+# age = 18
+# result = "Взрослый" if age >= 18 else "Ребёнок"
+# print(result)
+#
+# z = 15
+# if z % 3 == 0 and z > 10:
+#     print("Подходит")
+# else:
+#     print("Не подходит")
+#
+# n = -5
+# if n < 0:
+#     print("Отрицательное")
+# elif n == 0:
+#     print("Ноль")
+# else:
+#     print("Положительное")
+#
+# price = 250
+# if price < 100:
+#     print("Бюджетный")
+# elif 100 <= price < 500:
+#     print("Средний класс")
+# else:
+#     print("Премиум")
+#
+# num = 12
+# if num % 2 == 0 and num % 3 == 0:
+#     print("Делится на 6")
+# elif num % 2 == 0 and num % 3 != 0:
+#     print("Чётное, но не делится на 3")
+# else:
+#     print("Нечётное")
+#
+#
+# for num in range(1,6):
+#     print(f"{num}: {num ** 2}")
+#
+#
+# student = {
+#     "имя": "Алексей",
+#     "возраст": 20,
+#     "курс": 2
+# }
+# print(student["возраст"])
+#
+# car = {
+#     "марка": "Toyota",
+#     "модель": "Camry"
+# }
+# car["год"] = 2020
+# car["модель"] = "Corolla"
+# print(car)
+#
+# book = {
+#     "название": "1984",
+#     "автор": "Джордж Оруэлл",
+#     "год": 1949,
+#     "жанр": "антиутопия"
+# }
+# del book["жанр"]
+# print(book)
+#
+# country = {
+#     "название": "Япония",
+#     "столица": "Токио",
+#     "население": 125_800_000
+# }
+# print(country.keys())
+# print(country.values())
+#
+# movie = {
+#     "название": "Крестный отец",
+#     "год": 1972,
+#     "режиссер": "Фрэнсис Форд Коппола"
+# }
+#
+# result = "режиссер" in movie.keys()
+# result2 = "Квентин Тарантино" in movie.values()
+# print(result, result2)
+#
+# phone = {
+#     "модель": "iPhone 13",
+#     "память": "128GB"
+# }
+# phone["цвет"] = "синий"
+# print("цвет" in phone.keys())
+# print(phone.values())
+#
+# university = {
+#     "название": "МГУ",
+#     "адрес": {
+#         "город": "Москва",
+#         "улица": "Ленинские горы"
+#     }
+# }
+#
+# print(university["название"])
+# print(university["адрес"]["город"])
+#
+# laptop = {
+#     "модель": "MacBook Pro",
+#     "характеристики": {
+#         "год": 2023,
+#         "оперативная память": "16GB"
+#     }
+# }
+# laptop["характеристики"]["год"] = 2025
+# laptop["характеристики"]["SSD"] = "1TB"
+# print(laptop)
 
-y = 10
-if y % 2 == 0:
-    print("Чётное")
-else:
-    print("Нечётное")
+# class Robot:
+#     pass
+# r = Robot()
+#
+# class Car:
+#     wheels = 4
+# c = Car()
+#
+# class Book:
+#     def __init__(self, title, author):
+#         self.title = title
+#         self.author = author
+# b = Book("jfh", "j")
+#
+# class Calculator:
+#     def add(self,a ,b):
+#         return a + b
+# c = Calculator()
+# print(c.add(5,5))
+#
+# class Dog:
+#     def __init__(self, name):
+#         self.name = name
+# d1 = Dog("Бобик")
+# d2 = Dog("Шарик")
+# print(d1.name)
+# print(d2.name)
+#
+# class User:
+#     def get_info(self):
+#         return "Пользователь"
+# u = User()
+# p(u.get_info())
 
-age = 18
-if age >= 18:
-    status = "Взрослый"
-else:
-    status = "Ребёнок"
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+#     def speak(self):
+#         return f"{self.name} издает звук."
+# class Dog(Animal):
+#     def speak(self):
+#         return f"{self.name} гавкает!"
+# d = Dog("bob")
+# print(d.speak())
 
-age = 18
-result = "Взрослый" if age >= 18 else "Ребёнок"
-print(result)
+# class Vehicle:
+#     def __init__(self, brand):
+#         self.brand = brand
+#     def info(self):
+#         return f"Марка: {self.brand}"
+#
+# class Car(Vehicle):
+#     def __init__(self, model, brand):
+#         super().__init__(brand)
+#         self.model = model
+#     def info(self):
+#         return f"Марка: {self.brand}, Модель: {self.model}"
+# c = Car("Camry", "Toyota")
+# print(c.info())
 
-z = 15
-if z % 3 == 0 and z > 10:
-    print("Подходит")
-else:
-    print("Не подходит")
-
-n = -5
-if n < 0:
-    print("Отрицательное")
-elif n == 0:
-    print("Ноль")
-else:
-    print("Положительное")
-
-price = 250
-if price < 100:
-    print("Бюджетный")
-elif 100 <= price < 500:
-    print("Средний класс")
-else:
-    print("Премиум")
-
-num = 12
-if num % 2 == 0 and num % 3 == 0:
-    print("Делится на 6")
-elif num % 2 == 0 and num % 3 != 0:
-    print("Чётное, но не делится на 3")
-else:
-    print("Нечётное")
-
-
-for num in range(1,6):
-    print(f"{num}: {num ** 2}")
-
-
-student = {
-    "имя": "Алексей",
-    "возраст": 20,
-    "курс": 2
-}
-print(student["возраст"])
-
-car = {
-    "марка": "Toyota",
-    "модель": "Camry"
-}
-car["год"] = 2020
-car["модель"] = "Corolla"
-print(car)
-
-book = {
-    "название": "1984",
-    "автор": "Джордж Оруэлл",
-    "год": 1949,
-    "жанр": "антиутопия"
-}
-del book["жанр"]
-print(book)
-
-country = {
-    "название": "Япония",
-    "столица": "Токио",
-    "население": 125_800_000
-}
-print(country.keys())
-print(country.values())
-
-movie = {
-    "название": "Крестный отец",
-    "год": 1972,
-    "режиссер": "Фрэнсис Форд Коппола"
-}
-
-result = "режиссер" in movie.keys()
-result2 = "Квентин Тарантино" in movie.values()
-print(result, result2)
-
-phone = {
-    "модель": "iPhone 13",
-    "память": "128GB"
-}
-phone["цвет"] = "синий"
-print("цвет" in phone.keys())
-print(phone.values())
-
-university = {
-    "название": "МГУ",
-    "адрес": {
-        "город": "Москва",
-        "улица": "Ленинские горы"
-    }
-}
-
-print(university["название"])
-print(university["адрес"]["город"])
-
-laptop = {
-    "модель": "MacBook Pro",
-    "характеристики": {
-        "год": 2023,
-        "оперативная память": "16GB"
-    }
-}
-laptop["характеристики"]["год"] = 2025
-laptop["характеристики"]["SSD"] = "1TB"
-print(laptop)
+#
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#     def introduce(self):
+#         return f"Меня зовут {self.name}."
+# class Student(Person):
+#     def __init__(self, name, student_id):
+#         super().__init__(name)
+#         self.student_id = student_id
+#     def study(self):
+#         return f"{self.name} учится."
+# s = Student("ilya", "uy667")
+# print(s.introduce())
