@@ -81,7 +81,6 @@
 # options.add_argument("--disable-dlink-features=AutomationControlled")
 # options.add_experimental_option("excludeSwitches",["enable-automation"])
 # options.add_experimental_option("useAutomationExtension",False)
-from lesson1 import weight
 
 
 # driver = webdriver.Chrome(options=options)

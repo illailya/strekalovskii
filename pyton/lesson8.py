@@ -1,6 +1,3 @@
-from lesson6 import total
-
-
 # Функции
 def greet():
     print("Привет, мир!")

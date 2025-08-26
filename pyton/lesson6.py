@@ -1,8 +1,5 @@
 #Циклы
 #задание1
-from mmap import error
-
-from lesson1 import count
 
 text = "Python"
 for text1 in text:

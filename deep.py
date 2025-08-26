@@ -3262,9 +3262,7 @@
 # part2 = "mation"
 # result = part1 + part2
 # print(result)
-import time
 
-from lesson1 import result
 #
 # fruits = ["apple", "banana", "cherry"]
 # print(fruits)
@@ -3503,3 +3501,86 @@ from lesson1 import result
 #         return f"{self.name} учится."
 # s = Student("ilya", "uy667")
 # print(s.introduce())
+
+# class Car:
+#     def __init__(self,brand, model):
+#         self.brand = brand
+#         self.model = model
+#     def start_engine(self):
+#         return f"Двигатель запущен"
+# c = Car("TOYOTA", "srg")
+# print(c.brand)
+# print(c.model)
+#
+# class ElectricCar(Car):
+#     def __init__(self,brand, model, battery_capacity):
+#         super().__init__(brand, model)
+#         self.battery_capacity = battery_capacity
+# e = ElectricCar("tgj", "jlh", "jhbhj")
+
+
+# class Book:
+#     library_name = "Главная библиотека"
+#     def __init__(self, title, author):
+#         self.title = title
+#         self.author = author
+#     def get_info(self):
+#         return f"Название: {self.title}, Автор: {self.author}"
+#     def change_author(self, new_author):
+#         self.author = new_author
+# book1 = Book("dfg", "sg")
+# book2 = Book("1984", "Оруэлл")
+# print(book2.title)
+#
+# class Student:
+#     pass
+# s = Student()
+#
+# class Dog:
+#     def __init__(self, name, breed):
+#         self.name = name
+#         self.breed = breed
+# dog1 = Dog("dfv", "sf")
+# print(dog1.name)
+# print(dog1.breed)
+#
+# class BankAccount:
+#     def __init__(self, balance):
+#         self.__balance = balance
+#     def info(self):
+#         return f"Баланс {self.__balance}"
+#     def new_balance(self, new):
+#         self.__balance += new
+#     def min_balance(self, min):
+#         if min <= self.__balance:
+#          self.__balance -= min
+# bank = BankAccount(100)
+# class Person:
+#     def __init__(self, age):
+#         self._age = age
+#     def set_age(self, new_age):
+#         if new_age >= 0 and new_age <= 120:
+#             self._age = new_age
+#         else:
+#             print("Некорректный возраст")
+# pers1 = Person(50)
+# pers1.set_age(23)
+# print(pers1._age)
+
+class Animal:
+    def speak(self):
+        print("Some sound")
+class Dog(Animal):
+    def speak(self):
+        print("Woof")
+d1 = Dog()
+
+class Vehicle:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+class Car(Vehicle):
+    def __init__(self, brand, model, doors):
+        super().__init__(brand, model)
+        self.doors = doors
