@@ -3567,20 +3567,59 @@
 # pers1.set_age(23)
 # print(pers1._age)
 
-class Animal:
-    def speak(self):
-        print("Some sound")
-class Dog(Animal):
-    def speak(self):
-        print("Woof")
-d1 = Dog()
+# class Animal:
+#     def speak(self):
+#         print("Some sound")
+# class Dog(Animal):
+#     def speak(self):
+#         print("Woof")
+# d1 = Dog()
+#
+# class Vehicle:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+#
+# class Car(Vehicle):
+#     def __init__(self, brand, model, doors):
+#         super().__init__(brand, model)
+#         self.doors = doors
 
-class Vehicle:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
 
-class Car(Vehicle):
-    def __init__(self, brand, model, doors):
-        super().__init__(brand, model)
-        self.doors = doors
+# class Robot:
+#     def __init__(self, name, model):
+#         self.name = name
+#         self.model = model
+# r1 = Robot("R2-D2", "Астромеханик")
+# print(r1.name , r1.model)
+
+# class Calculator:
+#     def add(self, a, b):
+#         return a + b
+# c1 = Calculator()
+# print(c1.add(5,5))
+
+# class Car:
+#     wheels = 4
+#     def __init__(self, brand):
+#         self.brand = brand
+# car1 = Car("Toyota")
+# car2 = Car("BMW")
+# print(car1.wheels)
+# print(car1.brand)
+# print(car2.wheels)
+# print(car2.brand)
+
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#     def introduce(self):
+#         print(f"Привет, меня зовут {self.name}")
+# p1 = Person("Анна")
+# p1.introduce()
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        
