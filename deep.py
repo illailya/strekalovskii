@@ -3618,8 +3618,70 @@
 # p1 = Person("Анна")
 # p1.introduce()
 
-class Book:
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
-        
+# class Book:
+#     def __init__(self, title, author):
+#         self.title = title
+#         self.author = author
+
+
+# class Student:
+#     def __init__(self, grade, name):
+#         self.name = name
+#         self.grade = grade
+# stud1 = Student(5, "иван")
+# print(stud1.name)
+# print(stud1.grade)
+
+# class Dog:
+#     species = "Canis familiaris"
+#     def __init__(self, name):
+#         self.name = name
+# dog1 = Dog("Бобик")
+# print(dog1.species)
+# print(dog1.name)
+
+# class Student:
+#     def __init__(self, name, grade):
+#         self.name = name
+#         self.grade = grade
+# s1 = Student("Иван", "10-А")
+# print(s1.name)
+# print(s1.grade)
+# class BankAccount:
+#     def __init__(self, owner, balance = 0):
+#         self.owner = owner
+#         self.balance = balance
+#     def deposit(self, new):
+#         self.balance += new
+#     def withdraw(self, min):
+#         if min <= self.balance:
+#             self.balance -= min
+#         else:
+#             print("недостаточно средств")
+#     def check_balance(self):
+#         print(self.balance)
+# b1 = BankAccount("Анна")
+# b1.deposit(1000)
+# b1.withdraw(300)
+# b1.check_balance()
+
+
+# age = 25
+# height = 1.75
+# name = "Анна"
+# is_student = True
+# print(f"{age}, {height}, {name}, {is_student}")
+
+# text = "Python programming"
+#
+# print(len(text))
+# print(text[0:6])
+# print(text.upper())
+# print(text.replace("programming", "coding"))
+
+numbers = [3, 1, 4, 1, 5, 9, 2]
+numbers.append(6)
+del numbers[1]
+numbers.sort()
+print(numbers)
+print(len(numbers))

@@ -1,7 +1,7 @@
-import pytest
-
-
-class TestExample:
+# import pytest
+#
+#
+# class TestExample:
 
 
     # def  test_example3(self, user):
@@ -11,6 +11,17 @@ class TestExample:
     # def test_example3(self):
     #     print(self.login)
     #     print(self.password)
-    @pytest.mark.usefixtures("wdi")
-    def test_example(self):
-        self.driver.get("https://google.com/")
+
+    # @pytest.maprk.usefixtures("wdi")
+    # def test_example(self):
+    #     self.driver.get("https://google.com/")
+
+    #ex3
+
+    # def test_open_page(self):
+    #     self.driver.get("https://google.com")
+
+
+    # @pytest.mark.smoke
+    # def test_example(self, user):
+    #     print(user)

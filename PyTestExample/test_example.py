@@ -32,4 +32,3 @@
 #         assert output.is_displayed() is True
 #         assert ("Ilya" and "ilya@gmail.com" and "sovetska17") in output.text
 
-
