@@ -3679,9 +3679,91 @@
 # print(text.upper())
 # print(text.replace("programming", "coding"))
 
-numbers = [3, 1, 4, 1, 5, 9, 2]
-numbers.append(6)
-del numbers[1]
-numbers.sort()
-print(numbers)
-print(len(numbers))
+# numbers = [3, 1, 4, 1, 5, 9, 2]
+# numbers.append(6)
+# del numbers[1]
+# numbers.sort()
+# print(numbers)
+# print(len(numbers))
+
+# x = 6
+# if x % 2 == 0:
+#    print("Четное")
+# else:
+#      print("Нечетное")
+#
+# person = {
+#     "name": "Ilya",
+#     "age": 34,
+#     "city": "Arch"
+# }
+# print(person["age"])
+# person["country"] = "htg"
+# print(person)
+#
+# for num in range(0,11):
+#   print(num)
+#
+# with open("test.txt", "w", encoding="utf-8") as file:
+#     file.write("Hello, File!")
+#
+# with open("test.txt", "r", encoding="utf-8") as file:
+#     result = file.read()
+#     print(result)
+#
+# def s(a,b):
+#     return a + b
+# print(s(5,5))
+#
+# class Car:
+#     def __init__(self, model):
+#         self.model = model
+#     def start_engine(self):
+#         print("Двигатель запущен")
+# c1 = Car("Toyota")
+# print(c1.model)
+#
+# class ElectricCar(Car):
+#     def charge_battery(self):
+#         print("Батарея заряжается")
+# el = ElectricCar("bmw")
+# el.charge_battery()
+# print(el.model)
+# el.start_engine()
+
+
+# def my_decorator(func):
+#     def wrapper():
+#         print("Функция вызвана")
+#         func()
+#     return wrapper
+# @my_decorator
+# def say_hello():
+#     print("hello")
+#
+# say_hello()
+
+# x = 5
+# if x > 0:
+#     print("Положительное")
+# else:
+#     print("Отрицательное")
+
+# text = "Python Programming"
+# print(text[0:7])
+# print(text[-5:])
+# print(text[::-1])
+
+# color = ['red', 'green', 'blue']
+# color.insert(1, "yellow")
+# del color[-1]
+# print(color)
+
+# book = {
+#     "title": "byyyy",
+#     "author":"Ilya",
+#     "year": 2025
+# }
+# print(book)
+# for num in range(1,6):
+#     print(num**2)
