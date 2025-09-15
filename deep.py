@@ -3767,3 +3767,62 @@
 # print(book)
 # for num in range(1,6):
 #     print(num**2)
+
+# with open("test.txt", "w", encoding="utf-8") as file:
+#     file.write("Hello, World!")
+#
+# def multiply(a, b):
+#     return a * b
+
+
+# def my_decorator(func):
+#     def wrapper():
+#         print("Функция вызвана")
+#         return func()
+#     return wrapper
+# @my_decorator
+# def text():
+#     return "ok"
+# print(text())
+
+# class Car:
+#     def __init__(self,model):
+#         self.model = model
+#     def start_engine(self):
+#         print("Двигатель запущен")
+# c1 = Car("bmw")
+# c1.start_engine()
+#
+# class ElectricCar(Car):
+#     def start_engine(self):
+#         print("Электродвигатель запущен")
+# e1 = ElectricCar("Toyota")
+# e1.start_engine()
+
+colors = ["красный", "синий", "зеленый"]
+del colors[0]
+print(colors)
+
+temperature = -5
+if temperature < 0:
+    print("Холодно")
+else:
+    print("Тепло")
+
+book = {"title": "1984", "author": "Оруэлл"}
+print(book["title"])
+
+for num in range(1,4):
+    print(num**2)
+
+with open("test.txt", "r") as file:
+    result = file.read()
+    print(result)
+
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+print(is_even(5))
