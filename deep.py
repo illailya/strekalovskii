@@ -3799,30 +3799,187 @@
 # e1 = ElectricCar("Toyota")
 # e1.start_engine()
 
-colors = ["красный", "синий", "зеленый"]
-del colors[0]
-print(colors)
+# colors = ["красный", "синий", "зеленый"]
+# del colors[0]
+# print(colors)
+#
+# temperature = -5
+# if temperature < 0:
+#     print("Холодно")
+# else:
+#     print("Тепло")
+#
+# book = {"title": "1984", "author": "Оруэлл"}
+# print(book["title"])
+#
+# for num in range(1,4):
+#     print(num**2)
+#
+# with open("test.txt", "r") as file:
+#     result = file.read()
+#     print(result)
+#
+# def is_even(n):
+#     if n % 2 == 0:
+#         return True
+#     else:
+#         return False
+#
+# # print(is_even(5))
+#
+#
+# text = "Привет, мир!"
+# print(text.upper())
+#
+# fruits = ["яблоко", "банан", "апельсин", "киви"]
+# fruits.append("манго")
+# del fruits[1]
+# print(fruits)
+#
+#
+# x = 5
+# if x > 0:
+#     print("Число положительное")
+# elif x < 0:
+#     print("Число отрицательное")
+# else:
+#     print("Это ноль")
+#
+# student = {
+#     "name": "Ilya",
+#     "age" : 34,
+#     "course" : 0
+# }
+# student["grade"]= "1"
+# print(student)
+#
+#
+# count = 0
+# numbers = [1, 2, 3, 4, 5]
+# for num in numbers:
+#     count += num
+# print(count)
+#
+# with open("test.txt", "w", encoding="utf-8") as file:
+#     file.write("Это тестовый файл")
+#
+#
+# def my_decorator(func):
+#     def wrapper():
+#         print("Функция вызывается")
+#         func()
+#     return wrapper
+# @my_decorator
+# def text():
+#   print(123)
+# text()
+#
+#
+#
+# class Book:
+#     def __init__(self, title, author):
+#         self.title = title
+#         self.author = author
+#     def info(self):
+#         print(f"Название: {self.title}, Автор: {self.author}")
+# b1 = Book("jhf", "kgfhk")
+# b1.info()
+#
+#
+# price = 100
+# discount = 15
+# result = price - (price * (discount / 100))
+# print(result)
+#
+# s = "Python"
+# for text in s:
+#     print(text)
+#
+# numbers = [10, 20, 30, 40]
+# numbers[1] = 25
+# print(numbers)
+#
+# x = 6
+# if x % 3 == 0:
+#     print("Делится")
+# else:
+#     print("Не делится")
+#
+# car = {
+#     "brand": "bmw",
+#         "year": 2020
+# }
+# result = "color" in car
+# if "color" in car:
+#     print(car["color"])
+# else:
+#     car["color"] = "red"
+# print(car)
+#
+# words = ["apple", "banana", "cherry"]
+# for text in words:
+#     print(text, len(text))
+#
+# with open("test.txt", "r") as file:
+#     result = file.read()
+#     print(result)
+#
+# def is_even(n):
+#     if n % 2 == 0:
+#         return True
+#     else:
+#         return False
+#
+#
+# print(is_even(5))
+#
+#
+# def repeat_twice(func):
+#     def wrapper():
+#         func()
+#         func()
+#     return wrapper
+# @ repeat_twice
+# def result():
+#     print(123)
+# result()
 
-temperature = -5
-if temperature < 0:
-    print("Холодно")
-else:
-    print("Тепло")
 
-book = {"title": "1984", "author": "Оруэлл"}
-print(book["title"])
+#
+# text = "программирование"
+# print(text[::-1])
+#
+# colors = ["red", "green", "blue"]
+# colors.insert(0, "yellow")
+# print(colors)
+#
+# while True:
+#  num = float(input("Введите число: "))
+#  if num > 0:
+#      print("Число положительное")
+#  elif num < 0:
+#      print("Число отрицательное")
+#  else:
+#      print("Ноль")
+#
 
-for num in range(1,4):
-    print(num**2)
+# def uppercase_result(func):
+#     def wrapper():
+#         result = func
+#         return result.upper()
+#     return wrapper
+# @uppercase_result():
+# def text():
+#     "ghgh"
+# print(text())
 
-with open("test.txt", "r") as file:
-    result = file.read()
-    print(result)
-
-def is_even(n):
-    if n % 2 == 0:
-        return True
-    else:
-        return False
-
-print(is_even(5))
+class Student:
+    def __init__(self, name, grade = 0):
+        self.name = name
+        self.grade = grade
+    def upgrade(self):
+        if self.grade < 5:
+         self.grade += 1
+s1 = Student("ilya")
+s1.upgrade()
+print(s1.grade)
